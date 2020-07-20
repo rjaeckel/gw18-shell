@@ -1,0 +1,4703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Objects>
+<Object>
+<Property Name="httpIdent"> ::GET</Property>
+<Property Name="id">welcome</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">async ::DELETE</Property>
+<Property Name="id">clearAllComplete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">async ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property Name="name">state</Property>
+<Property Name="style">query</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">async/{id} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">async/{id} ::GET</Property>
+<Property Name="id">get</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">asyncStatus</Property>
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">async/{id}/file ::GET</Property>
+<Property Name="id">file</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">diagnostics/attributes ::GET</Property>
+<Property Name="id">listAttributes</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">attributeMap</Property>
+<Property Name="Params">
+<Property Name="name">locale</Property>
+<Property Name="style">query</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">diagnostics/index ::GET</Property>
+<Property Name="id">listIndices</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">diagnostics/index/{index} ::GET</Property>
+<Property Name="id">readIndex</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property Name="name">index</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">diagnostics/object/{id} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">objectAttributes</Property>
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">domain</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">warnings</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">deleteFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">domain</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/acl ::GET</Property>
+<Property Name="id">listAccessControl</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/acl ::PUT</Property>
+<Property Name="id">updateAccessControl</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/fields ::GET</Property>
+<Property Name="id">getAddressBookFields</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/labels ::GET</Property>
+<Property Name="id">getAddressBookLabels</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/labels/{field} ::DELETE</Property>
+<Property Name="id">clearAddressBookLabel</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">field</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/labels/{field} ::PUT</Property>
+<Property Name="id">setAddressBookLabel</Property>
+<Property Name="RequestType">addressBookField</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">field</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/view ::GET</Property>
+<Property Name="id">getAddressBookView</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/addressbook/view ::PUT</Property>
+<Property Name="id">putAddressBookView</Property>
+<Property Name="RequestType">addressBookView</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/administrator ::DELETE</Property>
+<Property Name="id">clearAdministrator</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/administrator ::GET</Property>
+<Property Name="id">getAdministrator</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/administrator ::PUT</Property>
+<Property Name="id">setAdministrator</Property>
+<Property Name="RequestType">administrator</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/clientoptions ::GET</Property>
+<Property Name="id">getClientOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/clientoptions ::PUT</Property>
+<Property Name="id">setClientOptions</Property>
+<Property Name="RequestType">clientOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/customaddresses ::GET</Property>
+<Property Name="id">getCustomAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/customaddresses/test ::GET</Property>
+<Property Name="id">testAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">testAddress</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/directorylinks ::POST</Property>
+<Property Name="id">ldapLink</Property>
+<Property Name="RequestType">dirLink</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/directorylinks/publish ::POST</Property>
+<Property Name="id">ldapPublish</Property>
+<Property Name="RequestType">dirPublish</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gatewaysubdirs ::GET</Property>
+<Property Name="id">listGatewaySubDirs</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">internetAgent</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">warnings</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">deleteFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">internetAgent</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/administrators ::GET</Property>
+<Property Name="id">listAdministrators</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/administrators ::POST</Property>
+<Property Name="id">addAdministrator</Property>
+<Property Name="RequestType">gatewayAdministrator</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/administrators/{id} ::DELETE</Property>
+<Property Name="id">removeAdministrator</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/administrators/{id} ::PUT</Property>
+<Property Name="id">updateAdministrator</Property>
+<Property Name="RequestType">gatewayAdministrator</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/aliases ::GET</Property>
+<Property Name="id">listAliases</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice ::GET</Property>
+<Property Name="id">listClassesOfService</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice ::POST</Property>
+<Property Name="id">createClassOfService</Property>
+<Property Name="RequestType">classOfService</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname} ::DELETE</Property>
+<Property Name="id">deleteClassOfService</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname} ::PUT</Property>
+<Property Name="id">updateClassOfService</Property>
+<Property Name="RequestType">classOfService</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members ::GET</Property>
+<Property Name="id">listClassOfServiceMembers</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members ::POST</Property>
+<Property Name="id">addCoSMember</Property>
+<Property Name="RequestType">cosmembership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members/{member} ::DELETE</Property>
+<Property Name="id">removeCosMember</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">member</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">cosname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/manage ::GET</Property>
+<Property Name="id">manageAgent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">command</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/recoverDb ::GET</Property>
+<Property Name="id">recover</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelayallowexception ::GET</Property>
+<Property Name="id">listSmtpAllowExceptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelayallowexception ::POST</Property>
+<Property Name="id">addSmtpAllowException</Property>
+<Property Name="RequestType">smtprelayexception</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelayallowexception/{fromUrl}/{toUrl} ::DELETE</Property>
+<Property Name="id">removeSmtpAllowException</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">exceptionId</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">toUrl</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">fromUrl</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelaypreventexception ::GET</Property>
+<Property Name="id">listSmtpPreventExceptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelaypreventexception ::POST</Property>
+<Property Name="id">addSmtpPreventException</Property>
+<Property Name="RequestType">smtprelayexception</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/smtprelaypreventexception/{fromUrl}/{toUrl} ::DELETE</Property>
+<Property Name="id">removeSmtpPreventException</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">toUrl</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">fromUrl</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/sslcerts ::POST</Property>
+<Property Name="id">generateCert</Property>
+<Property Name="RequestType">csrParams</Property>
+<Property Name="ResponseTypes">sslfiles</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">commit</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/status ::GET</Property>
+<Property Name="id">status</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/testAccessControl/{id} ::GET</Property>
+<Property Name="id">test</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/gwias/{gwia}/validateDb ::GET</Property>
+<Property Name="id">validate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">gwia</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/links ::GET</Property>
+<Property Name="id">listLinks</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">direction</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/links/{link} ::DELETE</Property>
+<Property Name="id">deleteLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">link</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/links/{link} ::GET</Property>
+<Property Name="id">getLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">link</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/links/{link} ::PUT</Property>
+<Property Name="id">putLink</Property>
+<Property Name="RequestType">domainLink</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">link</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/maintenance ::POST</Property>
+<Property Name="id">systemMaintenance</Property>
+<Property Name="RequestType">maintenanceOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/moverequests ::GET</Property>
+<Property Name="id">getMoveRequests</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">warnings</Property>
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">mta</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/files{folders: (/.*)?} ::GET</Property>
+<Property Name="id">browse</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restFile</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">folders</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">queryFolders</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFilter</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">filterType</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/manage ::GET</Property>
+<Property Name="id">manageAgent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">command</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/refevents ::GET</Property>
+<Property Name="id">listScheduledEvents</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/refevents ::PUT</Property>
+<Property Name="id">updateScheduledEvents</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/refevents/{eventName} ::DELETE</Property>
+<Property Name="id">removeScheduledEvent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">eventName</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/refevents/{eventName} ::PUT</Property>
+<Property Name="id">addScheduledEvent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">eventName</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/sslcerts ::POST</Property>
+<Property Name="id">generateCert</Property>
+<Property Name="RequestType">csrParams</Property>
+<Property Name="ResponseTypes">sslfiles</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">commit</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/mta/status ::GET</Property>
+<Property Name="id">status</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">postOffice</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">warnings</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">deleteFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">postOffice</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/acl ::GET</Property>
+<Property Name="id">listAccessControl</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/acl ::PUT</Property>
+<Property Name="id">updateAccessControl</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/aliases ::GET</Property>
+<Property Name="id">listAliases</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/aliases ::POST</Property>
+<Property Name="id">addAlias</Property>
+<Property Name="RequestType">gatewayAlias</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/aliases/{type} ::DELETE</Property>
+<Property Name="id">removeAlias</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">type</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/bumpclientupdate ::POST</Property>
+<Property Name="id">incrementClientUpdateBumpNumber</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/clientoptions ::GET</Property>
+<Property Name="id">getClientOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/clientoptions ::PUT</Property>
+<Property Name="id">setClientOptions</Property>
+<Property Name="RequestType">clientOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/directorylinks ::POST</Property>
+<Property Name="id">ldapLink</Property>
+<Property Name="RequestType">dirLink</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/directorylinks/publish ::POST</Property>
+<Property Name="id">ldapPublish</Property>
+<Property Name="RequestType">dirPublish</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">group</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">group</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/acl ::GET</Property>
+<Property Name="id">listAccessControl</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/acl ::PUT</Property>
+<Property Name="id">updateAccessControl</Property>
+<Property Name="RequestType">accessControlListUpdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink ::DELETE</Property>
+<Property Name="id">clearDirectoryLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink ::GET</Property>
+<Property Name="id">getDirectoryLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">directoryLink</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink ::PUT</Property>
+<Property Name="id">putDirectoryLink</Property>
+<Property Name="RequestType">directoryLink</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/publish ::POST</Property>
+<Property Name="id">ldapPublishUser</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">syncResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/sync ::POST</Property>
+<Property Name="id">ldapSyncUser</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">syncResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/emailaddresses ::GET</Property>
+<Property Name="id">getAllEmailAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">emailAddresses</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships ::DELETE</Property>
+<Property Name="id">removeAllGroupMemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships ::GET</Property>
+<Property Name="id">groupmemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships ::POST</Property>
+<Property Name="id">addGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships ::PUT</Property>
+<Property Name="id">updateGroupMemberships</Property>
+<Property Name="RequestType">groupMemberListUpdate</Property>
+<Property Name="ResponseTypes">listUpdateResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid} ::DELETE</Property>
+<Property Name="id">removeGroupMembership</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid} ::PUT</Property>
+<Property Name="id">updateGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members ::DELETE</Property>
+<Property Name="id">removeAllMembers</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members ::GET</Property>
+<Property Name="id">listMembers</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members ::POST</Property>
+<Property Name="id">addMember</Property>
+<Property Name="RequestType">member</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members ::PUT</Property>
+<Property Name="id">updateMembers</Property>
+<Property Name="RequestType">groupMemberListUpdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members.csv ::GET</Property>
+<Property Name="id">members_csv</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} ::DELETE</Property>
+<Property Name="id">removeMember</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">member</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} ::GET</Property>
+<Property Name="id">getMember</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">member</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} ::PUT</Property>
+<Property Name="id">updateMember</Property>
+<Property Name="RequestType">member</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">member</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/nicknames ::GET</Property>
+<Property Name="id">nicknames</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/groups/{group}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/gwcheck ::POST</Property>
+<Property Name="id">gwcheck</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/gwcheck/load ::POST</Property>
+<Property Name="id">loadCheckOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">checkOptions</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/gwcheck/save ::POST</Property>
+<Property Name="id">saveCheckOptions</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">library</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">library</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights ::GET</Property>
+<Property Name="id">listAccessRights</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights ::POST</Property>
+<Property Name="id">addAccessRights</Property>
+<Property Name="RequestType">libraryAccessRights</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights ::PUT</Property>
+<Property Name="id">batchUpdateAccessRights</Property>
+<Property Name="RequestType">libraryAccessRightsListUpdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid} ::DELETE</Property>
+<Property Name="id">removeAccessRights</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">userid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid} ::PUT</Property>
+<Property Name="id">updateAccessRights</Property>
+<Property Name="RequestType">libraryAccessRights</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">userid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas ::GET</Property>
+<Property Name="id">listEnabledStorageAreas</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas ::POST</Property>
+<Property Name="id">enableStorageArea</Property>
+<Property Name="RequestType">libraryAreaAccess</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas/ ::PUT</Property>
+<Property Name="id">updateEnabledStorageAreas</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas/{area} ::DELETE</Property>
+<Property Name="id">disableStorageArea</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">area</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck ::POST</Property>
+<Property Name="id">gwcheck</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/load ::POST</Property>
+<Property Name="id">loadCheckOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">checkOptions</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/save ::POST</Property>
+<Property Name="id">saveCheckOptions</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">libraryArea</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">area</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">area</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">libraryArea</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">area</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">library</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/maintenance ::POST</Property>
+<Property Name="id">systemMaintenance</Property>
+<Property Name="RequestType">maintenanceOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/moverequests ::GET</Property>
+<Property Name="id">getMoveRequests</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">nickname</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">nickname</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/emailaddresses ::GET</Property>
+<Property Name="id">getAllEmailAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">emailAddresses</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">nickname</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">poa</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">warnings</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">poa</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/files{folders: (/.*)?} ::GET</Property>
+<Property Name="id">browse</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restFile</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">folders</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">queryFolders</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFilter</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">filterType</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/manage ::GET</Property>
+<Property Name="id">manageAgent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">command</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents ::GET</Property>
+<Property Name="id">listScheduledEvents</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents ::PUT</Property>
+<Property Name="id">updateScheduledEvents</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName} ::DELETE</Property>
+<Property Name="id">removeScheduledEvent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">eventName</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName} ::PUT</Property>
+<Property Name="id">addScheduledEvent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">eventName</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/sslcerts ::POST</Property>
+<Property Name="id">generateCert</Property>
+<Property Name="RequestType">csrParams</Property>
+<Property Name="ResponseTypes">sslfiles</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">commit</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/status ::GET</Property>
+<Property Name="id">status</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">poa</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/refldapservers ::GET</Property>
+<Property Name="id">listldapservers</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/refldapservers ::PUT</Property>
+<Property Name="id">setAssoc2</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/rename ::POST</Property>
+<Property Name="id">rename</Property>
+<Property Name="RequestType">renameRequest</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources ::POST</Property>
+<Property Name="id">createResource</Property>
+<Property Name="RequestType">resource</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">resource</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions ::GET</Property>
+<Property Name="id">getClientOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions ::PUT</Property>
+<Property Name="id">setClientOptions</Property>
+<Property Name="RequestType">clientOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/directorylink/publish ::POST</Property>
+<Property Name="id">ldapPublishUser</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">syncResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/emailaddresses ::GET</Property>
+<Property Name="id">getAllEmailAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">emailAddresses</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships ::DELETE</Property>
+<Property Name="id">removeAllGroupMemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships ::GET</Property>
+<Property Name="id">groupmemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships ::POST</Property>
+<Property Name="id">addGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships ::PUT</Property>
+<Property Name="id">updateGroupMemberships</Property>
+<Property Name="RequestType">groupMemberListUpdate</Property>
+<Property Name="ResponseTypes">listUpdateResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid} ::DELETE</Property>
+<Property Name="id">removeGroupMembership</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid} ::PUT</Property>
+<Property Name="id">updateGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck ::POST</Property>
+<Property Name="id">gwcheck</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/load ::POST</Property>
+<Property Name="id">loadCheckOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">checkOptions</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/save ::POST</Property>
+<Property Name="id">saveCheckOptions</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/nicknames ::GET</Property>
+<Property Name="id">nicknames</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/restorearea ::GET</Property>
+<Property Name="id">getRestoreArea</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restoreArea</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/restoremailbox ::PUT</Property>
+<Property Name="id">restoreMailbox</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">resource</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/timestamp ::PUT</Property>
+<Property Name="id">setTimeStamp</Property>
+<Property Name="RequestType">gwtimestamp</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">user</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">user</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups ::GET</Property>
+<Property Name="id">administeredgroups</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups ::POST</Property>
+<Property Name="id">addAdministeredGroup</Property>
+<Property Name="RequestType">group</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups ::PUT</Property>
+<Property Name="id">updateAdministeredGroups</Property>
+<Property Name="RequestType">batchupdate</Property>
+<Property Name="ResponseTypes">listUpdateResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups/{group} ::DELETE</Property>
+<Property Name="id">removeAdministeredGroup</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/aliases ::GET</Property>
+<Property Name="id">listAliases</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/aliases ::POST</Property>
+<Property Name="id">addAlias</Property>
+<Property Name="RequestType">gatewayAlias</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/aliases/{type} ::DELETE</Property>
+<Property Name="id">removeAlias</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">type</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions ::GET</Property>
+<Property Name="id">getClientOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions ::PUT</Property>
+<Property Name="id">setClientOptions</Property>
+<Property Name="RequestType">clientOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink ::DELETE</Property>
+<Property Name="id">clearDirectoryLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink ::GET</Property>
+<Property Name="id">getDirectoryLink</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">directoryLink</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink ::PUT</Property>
+<Property Name="id">putDirectoryLink</Property>
+<Property Name="RequestType">directoryLink</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/publish ::POST</Property>
+<Property Name="id">ldapPublishUser</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">syncResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/sync ::POST</Property>
+<Property Name="id">ldapSyncUser</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">syncResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/emailaddresses ::GET</Property>
+<Property Name="id">getAllEmailAddresses</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">emailAddresses</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships ::DELETE</Property>
+<Property Name="id">removeAllGroupMemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships ::GET</Property>
+<Property Name="id">listGroupMemberships</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships ::POST</Property>
+<Property Name="id">addGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships ::PUT</Property>
+<Property Name="id">updateGroupMemberships</Property>
+<Property Name="RequestType">groupMemberListUpdate</Property>
+<Property Name="ResponseTypes">listUpdateResult</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid} ::DELETE</Property>
+<Property Name="id">removeGroupMembership</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid} ::PUT</Property>
+<Property Name="id">updateGroupMembership</Property>
+<Property Name="RequestType">membership</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">groupid</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck ::POST</Property>
+<Property Name="id">gwcheck</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/load ::POST</Property>
+<Property Name="id">loadCheckOptions</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">checkOptions</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/save ::POST</Property>
+<Property Name="id">saveCheckOptions</Property>
+<Property Name="RequestType">checkOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/info ::GET</Property>
+<Property Name="id">info</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/nicknames ::GET</Property>
+<Property Name="id">nicknames</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/resources ::GET</Property>
+<Property Name="id">resources</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restorearea ::GET</Property>
+<Property Name="id">getRestoreArea</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restoreArea</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restoremailbox ::PUT</Property>
+<Property Name="id">restoreMailbox</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">postoffice</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">user</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/{domain}/replicate ::POST</Property>
+<Property Name="id">replicate</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">domain</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">domains/attributes ::GET</Property>
+<Property Name="id">getAvailableAttributes</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/agents/{agent} ::DELETE</Property>
+<Property Name="id">deleteAgent</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">agent</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">deleteFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">gwiaSubDir</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/agents/{agent}/sslcerts ::POST</Property>
+<Property Name="id">generateAgentCert</Property>
+<Property Name="RequestType">csrParams</Property>
+<Property Name="ResponseTypes">sslfiles</Property>
+<Property Name="Params">
+<Property Name="name">agent</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/certificates ::GET</Property>
+<Property Name="id">certificates</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restFile</Property>
+<Property Name="Params">
+<Property Name="name">queryFilter</Property>
+<Property Name="style">query</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/certificates/{filename} ::DELETE</Property>
+<Property Name="id">deleteCert</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">filename</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/certificates/{filename} ::GET</Property>
+<Property Name="id">downloadCert</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">filename</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/certificates/{filename} ::PUT</Property>
+<Property Name="id">storeCert</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">filename</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/config ::GET</Property>
+<Property Name="id">config</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">nodeConfig</Property>
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/databases ::GET</Property>
+<Property Name="id">listDatabases</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/databases ::POST</Property>
+<Property Name="id">mountDatabase</Property>
+<Property Name="RequestType">nodeDbInfo</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/databases/{id} ::GET</Property>
+<Property Name="id">getDatabaseInfo</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">nodeDbInfo</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">checklock</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/databases/{id}/file ::GET</Property>
+<Property Name="id">getDatabaseFile</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/databases/{id}/file ::PUT</Property>
+<Property Name="id">putDatabaseFile</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/files{folders: (/.*)?} ::GET</Property>
+<Property Name="id">browse</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">restFile</Property>
+<Property Name="Params">
+<Property>
+<Property Name="name">folders</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">queryFolders</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFiles</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">queryFilter</Property>
+<Property Name="style">query</Property>
+</Property>
+<Property>
+<Property Name="name">filterType</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/maintenance ::GET</Property>
+<Property Name="id">listMaintenanceJobs</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">list</Property>
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/maintenance ::POST</Property>
+<Property Name="id">runMaintenance</Property>
+<Property Name="RequestType">maintenanceOptions</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">node/maintenance/{id} ::DELETE</Property>
+<Property Name="id">removeMaintenanceJob</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/maintenance/{id} ::GET</Property>
+<Property Name="id">getMaintenanceJob</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes">asyncStatus</Property>
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">node/manageservice ::POST</Property>
+<Property Name="id">manageService</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">object/{id} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">object/{id} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">object/type/{id} ::GET</Property>
+<Property Name="id">objectType</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">id</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">prefs ::GET</Property>
+<Property Name="id">list</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">prefs ::POST</Property>
+<Property Name="id">create</Property>
+<Property Name="RequestType">customPreference</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params" />
+</Object>
+<Object>
+<Property Name="httpIdent">prefs/{group} ::GET</Property>
+<Property Name="id">listInGroup</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">prefs/{group} ::POST</Property>
+<Property Name="id">createInGroup</Property>
+<Property Name="RequestType">customPreference</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">prefs/{group}/{name} ::DELETE</Property>
+<Property Name="id">delete</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">name</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">prefs/{group}/{name} ::GET</Property>
+<Property Name="id">object</Property>
+<Property Name="RequestType" />
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">name</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+</Property>
+</Object>
+<Object>
+<Property Name="httpIdent">prefs/{group}/{name} ::PUT</Property>
+<Property Name="id">update</Property>
+<Property Name="RequestType">customPreference</Property>
+<Property Name="ResponseTypes" />
+<Property Name="Params">
+<Property>
+<Property Name="name">name</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">group</Property>
+<Property Name="style">template</Property>
+</Property>
+<Property>
+<Property Name="name">attrs</Property>
+<Property Name="style">query</Property>
+</Property>
+</Property>
+</Object>
+</Objects>

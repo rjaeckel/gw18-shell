@@ -1,0 +1,2814 @@
+4,10d3
+< <Property Name="httpIdent"> ::GET</Property>
+< <Property Name="id">welcome</Property>
+< <Property Name="RequestType" />
+< <Property Name="ResponseTypes" />
+< <Property Name="Params" />
+< </Object>
+< <Object>
+12c5
+< <Property Name="id">clearAllComplete</Property>
+---
+> <Property Name="id" />
+19c12
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+29c22
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+39c32
+< <Property Name="id">get</Property>
+---
+> <Property Name="id" />
+49c42
+< <Property Name="id">file</Property>
+---
+> <Property Name="id" />
+59c52
+< <Property Name="id">listAttributes</Property>
+---
+> <Property Name="id" />
+69c62
+< <Property Name="id">listIndices</Property>
+---
+> <Property Name="id" />
+76c69
+< <Property Name="id">readIndex</Property>
+---
+> <Property Name="id" />
+86c79
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+96c89
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+98c91
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+106,107c99,100
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">domain</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+109,112c102
+< <Property Name="Params">
+< <Property Name="name">domain</Property>
+< <Property Name="style">template</Property>
+< </Property>
+---
+> <Property Name="Params" />
+116c106
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+132c122
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+142,143c132,133
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">domain</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+158c148
+< <Property Name="id">listAccessControl</Property>
+---
+> <Property Name="id" />
+160c150
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+168c158
+< <Property Name="id">updateAccessControl</Property>
+---
+> <Property Name="id" />
+176a167,182
+> <Property Name="httpIdent">domains/{domain}/acl/{adminid} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">accessControl</Property>
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">adminid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+178c184
+< <Property Name="id">getAddressBookFields</Property>
+---
+> <Property Name="id" />
+180c186
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">addressBookField</Property>
+188c194
+< <Property Name="id">getAddressBookLabels</Property>
+---
+> <Property Name="id" />
+190c196
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">addressBookField</Property>
+198c204
+< <Property Name="id">clearAddressBookLabel</Property>
+---
+> <Property Name="id" />
+214c220
+< <Property Name="id">setAddressBookLabel</Property>
+---
+> <Property Name="id" />
+230c236
+< <Property Name="id">getAddressBookView</Property>
+---
+> <Property Name="id" />
+232c238
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">addressBookView</Property>
+240c246
+< <Property Name="id">putAddressBookView</Property>
+---
+> <Property Name="id" />
+250c256
+< <Property Name="id">clearAdministrator</Property>
+---
+> <Property Name="id" />
+260c266
+< <Property Name="id">getAdministrator</Property>
+---
+> <Property Name="id" />
+262c268
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">administrator</Property>
+270c276
+< <Property Name="id">setAdministrator</Property>
+---
+> <Property Name="id" />
+280c286
+< <Property Name="id">getClientOptions</Property>
+---
+> <Property Name="id" />
+282c288
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">clientOptions</Property>
+296c302
+< <Property Name="id">setClientOptions</Property>
+---
+> <Property Name="id" />
+312c318
+< <Property Name="id">getCustomAddresses</Property>
+---
+> <Property Name="id" />
+314c320
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+322c328
+< <Property Name="id">testAddresses</Property>
+---
+> <Property Name="id" />
+338c344
+< <Property Name="id">ldapLink</Property>
+---
+> <Property Name="id" />
+340c346
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">syncResultSummary</Property>
+348c354
+< <Property Name="id">ldapPublish</Property>
+---
+> <Property Name="id" />
+350c356
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">syncContainerSummary</Property>
+358c364
+< <Property Name="id">listGatewaySubDirs</Property>
+---
+> <Property Name="id" />
+360c366
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+368c374
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+370c376
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+378,379c384,385
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">internetAgent</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+388c394
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+393c399
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+397c403
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+408c414
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+413c419
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+417c423
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+424,425c430,431
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">internetAgent</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+429c435
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+433c439
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+444c450
+< <Property Name="id">listAdministrators</Property>
+---
+> <Property Name="id" />
+446c452
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+449c455
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+453c459
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+460c466
+< <Property Name="id">addAdministrator</Property>
+---
+> <Property Name="id" />
+465c471
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+469c475
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+476c482
+< <Property Name="id">removeAdministrator</Property>
+---
+> <Property Name="id" />
+481c487
+< <Property Name="name">id</Property>
+---
+> <Property Name="name">domain</Property>
+489c495
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">id</Property>
+496c502
+< <Property Name="id">updateAdministrator</Property>
+---
+> <Property Name="id" />
+501c507
+< <Property Name="name">id</Property>
+---
+> <Property Name="name">domain</Property>
+509c515
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">id</Property>
+516c522
+< <Property Name="id">listAliases</Property>
+---
+> <Property Name="id" />
+518c524
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+521c527
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+525c531
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+532c538
+< <Property Name="id">listClassesOfService</Property>
+---
+> <Property Name="id" />
+534c540
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+537c543
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+541c547
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+548c554
+< <Property Name="id">createClassOfService</Property>
+---
+> <Property Name="id" />
+553c559
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+557c563
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+564c570
+< <Property Name="id">deleteClassOfService</Property>
+---
+> <Property Name="id" />
+569c575
+< <Property Name="name">cosname</Property>
+---
+> <Property Name="name">domain</Property>
+573c579
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">cosname</Property>
+577c583
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+584c590
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+586c592
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">classOfService</Property>
+589c595
+< <Property Name="name">cosname</Property>
+---
+> <Property Name="name">domain</Property>
+593c599
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">cosname</Property>
+597c603
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+604c610
+< <Property Name="id">updateClassOfService</Property>
+---
+> <Property Name="id" />
+609c615
+< <Property Name="name">cosname</Property>
+---
+> <Property Name="name">domain</Property>
+613c619
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">cosname</Property>
+617c623
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+628c634
+< <Property Name="id">listClassOfServiceMembers</Property>
+---
+> <Property Name="id" />
+630c636
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+633c639
+< <Property Name="name">cosname</Property>
+---
+> <Property Name="name">domain</Property>
+637c643
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">cosname</Property>
+641c647
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+648c654
+< <Property Name="id">addCoSMember</Property>
+---
+> <Property Name="id" />
+653c659
+< <Property Name="name">cosname</Property>
+---
+> <Property Name="name">domain</Property>
+657c663
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">cosname</Property>
+661c667
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+668c674
+< <Property Name="id">removeCosMember</Property>
+---
+> <Property Name="id" />
+673c679
+< <Property Name="name">member</Property>
+---
+> <Property Name="name">domain</Property>
+685c691
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">member</Property>
+692c698
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+694c700
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">gwiaInfo</Property>
+697c703
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+701c707
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+708c714
+< <Property Name="id">manageAgent</Property>
+---
+> <Property Name="id" />
+713c719
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+717c723
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+728c734
+< <Property Name="id">recover</Property>
+---
+> <Property Name="id" />
+730c736
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">gwiarecoverdbresult</Property>
+733c739
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+737c743
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+744c750
+< <Property Name="id">listSmtpAllowExceptions</Property>
+---
+> <Property Name="id" />
+746c752
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+749c755
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+753c759
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+760c766
+< <Property Name="id">addSmtpAllowException</Property>
+---
+> <Property Name="id" />
+765c771
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+769c775
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+776c782
+< <Property Name="id">removeSmtpAllowException</Property>
+---
+> <Property Name="id" />
+781c787
+< <Property Name="name">exceptionId</Property>
+---
+> <Property Name="name">toUrl</Property>
+785c791
+< <Property Name="name">toUrl</Property>
+---
+> <Property Name="name">fromUrl</Property>
+789c795
+< <Property Name="name">fromUrl</Property>
+---
+> <Property Name="name">domain</Property>
+793c799
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">exceptionId</Property>
+797c803
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+804c810
+< <Property Name="id">listSmtpPreventExceptions</Property>
+---
+> <Property Name="id" />
+806c812
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+809c815
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+813c819
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+820c826
+< <Property Name="id">addSmtpPreventException</Property>
+---
+> <Property Name="id" />
+825c831
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+829c835
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+836c842
+< <Property Name="id">removeSmtpPreventException</Property>
+---
+> <Property Name="id" />
+849c855
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+853c859
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+860c866
+< <Property Name="id">generateCert</Property>
+---
+> <Property Name="id" />
+865c871
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+869c875
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+880c886
+< <Property Name="id">status</Property>
+---
+> <Property Name="id" />
+885c891
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+889c895
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+896c902
+< <Property Name="id">test</Property>
+---
+> <Property Name="id" />
+898c904
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">internetAgentAccessControlTest</Property>
+901c907
+< <Property Name="name">id</Property>
+---
+> <Property Name="name">domain</Property>
+909c915
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">id</Property>
+916c922
+< <Property Name="id">validate</Property>
+---
+> <Property Name="id" />
+918c924
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">gwiavalidatedbresult</Property>
+921c927
+< <Property Name="name">gwia</Property>
+---
+> <Property Name="name">domain</Property>
+925c931
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">gwia</Property>
+932c938
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+934c940
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">domainInfo</Property>
+942c948
+< <Property Name="id">listLinks</Property>
+---
+> <Property Name="id" />
+944c950
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+958c964
+< <Property Name="id">deleteLink</Property>
+---
+> <Property Name="id" />
+963c969
+< <Property Name="name">link</Property>
+---
+> <Property Name="name">domain</Property>
+967c973
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">link</Property>
+974c980
+< <Property Name="id">getLink</Property>
+---
+> <Property Name="id" />
+979c985
+< <Property Name="name">link</Property>
+---
+> <Property Name="name">domain</Property>
+983c989
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">link</Property>
+990,991c996,997
+< <Property Name="id">putLink</Property>
+< <Property Name="RequestType">domainLink</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+995c1001
+< <Property Name="name">link</Property>
+---
+> <Property Name="name">domain</Property>
+999c1005
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">link</Property>
+1010c1016
+< <Property Name="id">systemMaintenance</Property>
+---
+> <Property Name="id" />
+1018a1025,1040
+> <Property Name="httpIdent">domains/{domain}/messengeruserlist/{messengerid} ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">messengerid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+1020c1042
+< <Property Name="id">getMoveRequests</Property>
+---
+> <Property Name="id" />
+1030c1052
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+1040c1062
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+1050,1051c1072,1073
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">mta</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+1065,1066c1087,1088
+< <Property Name="httpIdent">domains/{domain}/mta/files{folders: (/.*)?} ::GET</Property>
+< <Property Name="id">browse</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/mta/files{folders} ::GET</Property>
+> <Property Name="id" />
+1071c1093
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">folders</Property>
+1075c1097
+< <Property Name="name">folders</Property>
+---
+> <Property Name="name">domain</Property>
+1079c1101
+< <Property Name="name">queryFolders</Property>
+---
+> <Property Name="name">filterType</Property>
+1091c1113
+< <Property Name="name">filterType</Property>
+---
+> <Property Name="name">queryFolders</Property>
+1097,1098c1119,1120
+< <Property Name="httpIdent">domains/{domain}/mta/manage ::GET</Property>
+< <Property Name="id">manageAgent</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/mta/ldapcertificate ::GET</Property>
+> <Property Name="id" />
+1101a1124,1133
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/mta/manage ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">nodeStatus</Property>
+> <Property Name="Params">
+1112a1145,1154
+> <Property Name="httpIdent">domains/{domain}/mta/messengersync ::POST</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">apiStatus</Property>
+> <Property Name="Params">
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Object>
+> <Object>
+1114c1156
+< <Property Name="id">listScheduledEvents</Property>
+---
+> <Property Name="id" />
+1116c1158
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1124c1166
+< <Property Name="id">updateScheduledEvents</Property>
+---
+> <Property Name="id" />
+1126c1168
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+1134c1176
+< <Property Name="id">removeScheduledEvent</Property>
+---
+> <Property Name="id" />
+1150c1192
+< <Property Name="id">addScheduledEvent</Property>
+---
+> <Property Name="id" />
+1166c1208
+< <Property Name="id">generateCert</Property>
+---
+> <Property Name="id" />
+1182c1224
+< <Property Name="id">status</Property>
+---
+> <Property Name="id" />
+1192c1234
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+1194c1236
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1202,1203c1244,1245
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">postOffice</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+1212c1254
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+1232c1274
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+1248,1249c1290,1291
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">postOffice</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+1268c1310
+< <Property Name="id">listAccessControl</Property>
+---
+> <Property Name="id" />
+1270c1312
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1284c1326
+< <Property Name="id">updateAccessControl</Property>
+---
+> <Property Name="id" />
+1286c1328
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+1298a1341,1360
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/acl/{adminid} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">accessControl</Property>
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">adminid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+1300c1362
+< <Property Name="id">listAliases</Property>
+---
+> <Property Name="id" />
+1302c1364
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1316c1378
+< <Property Name="id">addAlias</Property>
+---
+> <Property Name="id" />
+1332c1394
+< <Property Name="id">removeAlias</Property>
+---
+> <Property Name="id" />
+1352c1414
+< <Property Name="id">incrementClientUpdateBumpNumber</Property>
+---
+> <Property Name="id" />
+1368c1430
+< <Property Name="id">getClientOptions</Property>
+---
+> <Property Name="id" />
+1370c1432
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">clientOptions</Property>
+1388c1450
+< <Property Name="id">setClientOptions</Property>
+---
+> <Property Name="id" />
+1408c1470
+< <Property Name="id">ldapLink</Property>
+---
+> <Property Name="id" />
+1424c1486
+< <Property Name="id">ldapPublish</Property>
+---
+> <Property Name="id" />
+1426c1488
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">syncContainerSummary</Property>
+1440c1502
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+1442c1504
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1456,1457c1518,1519
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">group</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+1472c1534
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+1492c1554
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+1512,1513c1574,1575
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">group</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+1536c1598
+< <Property Name="id">listAccessControl</Property>
+---
+> <Property Name="id" />
+1538c1600
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1556c1618
+< <Property Name="id">updateAccessControl</Property>
+---
+> <Property Name="id" />
+1576c1638
+< <Property Name="id">clearDirectoryLink</Property>
+---
+> <Property Name="id" />
+1596c1658
+< <Property Name="id">getDirectoryLink</Property>
+---
+> <Property Name="id" />
+1616c1678
+< <Property Name="id">putDirectoryLink</Property>
+---
+> <Property Name="id" />
+1636c1698
+< <Property Name="id">ldapPublishUser</Property>
+---
+> <Property Name="id" />
+1656c1718
+< <Property Name="id">ldapSyncUser</Property>
+---
+> <Property Name="id" />
+1676c1738
+< <Property Name="id">getAllEmailAddresses</Property>
+---
+> <Property Name="id" />
+1696c1758
+< <Property Name="id">removeAllGroupMemberships</Property>
+---
+> <Property Name="id" />
+1716c1778
+< <Property Name="id">groupmemberships</Property>
+---
+> <Property Name="id" />
+1736c1798
+< <Property Name="id">addGroupMembership</Property>
+---
+> <Property Name="id" />
+1756c1818
+< <Property Name="id">updateGroupMemberships</Property>
+---
+> <Property Name="id" />
+1776c1838
+< <Property Name="id">removeGroupMembership</Property>
+---
+> <Property Name="id" />
+1800c1862
+< <Property Name="id">updateGroupMembership</Property>
+---
+> <Property Name="id" />
+1824c1886
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+1826c1888
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">groupInfo</Property>
+1844c1906
+< <Property Name="id">removeAllMembers</Property>
+---
+> <Property Name="id" />
+1864c1926
+< <Property Name="id">listMembers</Property>
+---
+> <Property Name="id" />
+1866c1928
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+1884c1946
+< <Property Name="id">addMember</Property>
+---
+> <Property Name="id" />
+1904c1966
+< <Property Name="id">updateMembers</Property>
+---
+> <Property Name="id" />
+1906c1968
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+1924c1986
+< <Property Name="id">members_csv</Property>
+---
+> <Property Name="id" />
+1944c2006
+< <Property Name="id">removeMember</Property>
+---
+> <Property Name="id" />
+1949c2011
+< <Property Name="name">member</Property>
+---
+> <Property Name="name">postoffice</Property>
+1953c2015
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">domain</Property>
+1957c2019
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">member</Property>
+1968c2030
+< <Property Name="id">getMember</Property>
+---
+> <Property Name="id" />
+1970c2032
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">member</Property>
+1973c2035
+< <Property Name="name">member</Property>
+---
+> <Property Name="name">postoffice</Property>
+1977c2039
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">domain</Property>
+1981c2043
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">member</Property>
+1992c2054
+< <Property Name="id">updateMember</Property>
+---
+> <Property Name="id" />
+1997c2059
+< <Property Name="name">member</Property>
+---
+> <Property Name="name">postoffice</Property>
+2001c2063
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">domain</Property>
+2005c2067
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">member</Property>
+2016c2078
+< <Property Name="id">nicknames</Property>
+---
+> <Property Name="id" />
+2018c2080
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2036c2098
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="id" />
+2056c2118
+< <Property Name="id">gwcheck</Property>
+---
+> <Property Name="id" />
+2072c2134
+< <Property Name="id">loadCheckOptions</Property>
+---
+> <Property Name="id" />
+2088c2150
+< <Property Name="id">saveCheckOptions</Property>
+---
+> <Property Name="id" />
+2104c2166
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+2106c2168
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">postOfficeInfo</Property>
+2120c2182
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+2122c2184
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2136,2137c2198,2199
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">library</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2152c2214
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+2172c2234
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+2192,2193c2254,2255
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">library</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2216c2278
+< <Property Name="id">listAccessRights</Property>
+---
+> <Property Name="id" />
+2218c2280
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2236c2298
+< <Property Name="id">addAccessRights</Property>
+---
+> <Property Name="id" />
+2256c2318
+< <Property Name="id">batchUpdateAccessRights</Property>
+---
+> <Property Name="id" />
+2258c2320
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+2276c2338
+< <Property Name="id">removeAccessRights</Property>
+---
+> <Property Name="id" />
+2285c2347
+< <Property Name="name">userid</Property>
+---
+> <Property Name="name">library</Property>
+2289c2351
+< <Property Name="name">library</Property>
+---
+> <Property Name="name">domain</Property>
+2293c2355
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">userid</Property>
+2300c2362
+< <Property Name="id">updateAccessRights</Property>
+---
+> <Property Name="id" />
+2308a2371,2378
+> <Property Name="name">library</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+2311a2382,2393
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/directorylink ::DELETE</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes" />
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+2324c2406
+< <Property Name="id">listEnabledStorageAreas</Property>
+---
+> <Property Name="id" />
+2326c2408
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2344c2426
+< <Property Name="id">enableStorageArea</Property>
+---
+> <Property Name="id" />
+2363,2364c2445,2446
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas/ ::PUT</Property>
+< <Property Name="id">updateEnabledStorageAreas</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas ::PUT</Property>
+> <Property Name="id" />
+2366c2448
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+2384c2466
+< <Property Name="id">disableStorageArea</Property>
+---
+> <Property Name="id" />
+2389c2471
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">area</Property>
+2393c2475
+< <Property Name="name">area</Property>
+---
+> <Property Name="name">postoffice</Property>
+2408c2490
+< <Property Name="id">gwcheck</Property>
+---
+> <Property Name="id" />
+2428c2510
+< <Property Name="id">loadCheckOptions</Property>
+---
+> <Property Name="id" />
+2448c2530
+< <Property Name="id">saveCheckOptions</Property>
+---
+> <Property Name="id" />
+2468c2550
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+2470c2552
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">libraryInfo</Property>
+2488c2570
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="id" />
+2508c2590
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+2510c2592
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2528,2529c2610,2611
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">libraryArea</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2548c2630
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+2553c2635
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">area</Property>
+2557c2639
+< <Property Name="name">area</Property>
+---
+> <Property Name="name">postoffice</Property>
+2572c2654
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+2577,2580d2658
+< <Property Name="name">postoffice</Property>
+< <Property Name="style">template</Property>
+< </Property>
+< <Property>
+2585c2663
+< <Property Name="name">library</Property>
+---
+> <Property Name="name">postoffice</Property>
+2596,2597c2674,2675
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">libraryArea</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2601c2679
+< <Property Name="name">postoffice</Property>
+---
+> <Property Name="name">area</Property>
+2605c2683
+< <Property Name="name">area</Property>
+---
+> <Property Name="name">postoffice</Property>
+2624c2702
+< <Property Name="id">systemMaintenance</Property>
+---
+> <Property Name="id" />
+2638a2717,2736
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/messengeruserlist/{messengerid} ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">messengerid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+2640c2738
+< <Property Name="id">getMoveRequests</Property>
+---
+> <Property Name="id" />
+2656c2754
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+2658c2756
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2672,2673c2770,2771
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">nickname</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2688c2786
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+2697c2795
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2701c2799
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2708c2806
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+2717c2815
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2721c2819
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2728,2729c2826,2827
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">nickname</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2737c2835
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2741c2839
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2752c2850
+< <Property Name="id">getAllEmailAddresses</Property>
+---
+> <Property Name="id" />
+2761c2859
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2765c2863
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2772c2870
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+2774c2872
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">nicknameInfo</Property>
+2781c2879
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2785c2883
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2792c2890
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="id" />
+2801c2899
+< <Property Name="name">nickname</Property>
+---
+> <Property Name="name">domain</Property>
+2805c2903
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">nickname</Property>
+2812c2910
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+2814c2912
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2828,2829c2926,2927
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">poa</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2844c2942
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+2864c2962
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+2884,2885c2982,2983
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">poa</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+2907,2908c3005,3006
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/files{folders: (/.*)?} ::GET</Property>
+< <Property Name="id">browse</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/poas/{poa}/files{folders} ::GET</Property>
+> <Property Name="id" />
+2917c3015
+< <Property Name="name">poa</Property>
+---
+> <Property Name="name">folders</Property>
+2921c3019
+< <Property Name="name">domain</Property>
+---
+> <Property Name="name">poa</Property>
+2925c3023
+< <Property Name="name">folders</Property>
+---
+> <Property Name="name">domain</Property>
+2929c3027
+< <Property Name="name">queryFolders</Property>
+---
+> <Property Name="name">filterType</Property>
+2941c3039
+< <Property Name="name">filterType</Property>
+---
+> <Property Name="name">queryFolders</Property>
+2948c3046
+< <Property Name="id">manageAgent</Property>
+---
+> <Property Name="id" />
+2950c3048
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">nodeStatus</Property>
+2972c3070
+< <Property Name="id">listScheduledEvents</Property>
+---
+> <Property Name="id" />
+2974c3072
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+2992c3090
+< <Property Name="id">updateScheduledEvents</Property>
+---
+> <Property Name="id" />
+2994c3092
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+3012c3110
+< <Property Name="id">removeScheduledEvent</Property>
+---
+> <Property Name="id" />
+3036c3134
+< <Property Name="id">addScheduledEvent</Property>
+---
+> <Property Name="id" />
+3060c3158
+< <Property Name="id">generateCert</Property>
+---
+> <Property Name="id" />
+3084c3182
+< <Property Name="id">status</Property>
+---
+> <Property Name="id" />
+3104c3202
+< <Property Name="id">listldapservers</Property>
+---
+> <Property Name="id" />
+3106c3204
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3120c3218
+< <Property Name="id">setAssoc2</Property>
+---
+> <Property Name="id" />
+3122c3220
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">listUpdateResult</Property>
+3136c3234
+< <Property Name="id">rename</Property>
+---
+> <Property Name="id" />
+3152c3250
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="id" />
+3168c3266
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+3170c3268
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3184,3185c3282,3283
+< <Property Name="id">createResource</Property>
+< <Property Name="RequestType">resource</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+3200c3298
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+3220c3318
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+3240,3241c3338,3339
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">resource</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+3264c3362
+< <Property Name="id">getClientOptions</Property>
+---
+> <Property Name="id" />
+3266c3364
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">clientOptions</Property>
+3288c3386
+< <Property Name="id">setClientOptions</Property>
+---
+> <Property Name="id" />
+3310a3409,3428
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/resources/{resource}/directorylink ::DELETE</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes" />
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">resource</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+3312c3430
+< <Property Name="id">ldapPublishUser</Property>
+---
+> <Property Name="id" />
+3332c3450
+< <Property Name="id">getAllEmailAddresses</Property>
+---
+> <Property Name="id" />
+3352c3470
+< <Property Name="id">removeAllGroupMemberships</Property>
+---
+> <Property Name="id" />
+3372c3490
+< <Property Name="id">groupmemberships</Property>
+---
+> <Property Name="id" />
+3392c3510
+< <Property Name="id">addGroupMembership</Property>
+---
+> <Property Name="id" />
+3412c3530
+< <Property Name="id">updateGroupMemberships</Property>
+---
+> <Property Name="id" />
+3432c3550
+< <Property Name="id">removeGroupMembership</Property>
+---
+> <Property Name="id" />
+3456c3574
+< <Property Name="id">updateGroupMembership</Property>
+---
+> <Property Name="id" />
+3480c3598
+< <Property Name="id">gwcheck</Property>
+---
+> <Property Name="id" />
+3500c3618
+< <Property Name="id">loadCheckOptions</Property>
+---
+> <Property Name="id" />
+3520c3638
+< <Property Name="id">saveCheckOptions</Property>
+---
+> <Property Name="id" />
+3540c3658
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+3542c3660
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">resourceInfo</Property>
+3560c3678
+< <Property Name="id">nicknames</Property>
+---
+> <Property Name="id" />
+3562c3680
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3580c3698
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="id" />
+3600c3718
+< <Property Name="id">getRestoreArea</Property>
+---
+> <Property Name="id" />
+3602c3720
+< <Property Name="ResponseTypes">restoreArea</Property>
+---
+> <Property Name="ResponseTypes" />
+3620c3738
+< <Property Name="id">restoreMailbox</Property>
+---
+> <Property Name="id" />
+3640c3758
+< <Property Name="id">setTimeStamp</Property>
+---
+> <Property Name="id" />
+3656c3774
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+3658c3776
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3672,3673c3790,3791
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">user</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+3688c3806
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+3708c3826
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+3728,3729c3846,3847
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">user</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+3750a3869,3908
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/addressbookssharedby ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/addressbookssharedwith ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+3752c3910
+< <Property Name="id">administeredgroups</Property>
+---
+> <Property Name="id" />
+3754c3912
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3772,3773c3930,3931
+< <Property Name="id">addAdministeredGroup</Property>
+< <Property Name="RequestType">group</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+3792c3950
+< <Property Name="id">updateAdministeredGroups</Property>
+---
+> <Property Name="id" />
+3812c3970
+< <Property Name="id">removeAdministeredGroup</Property>
+---
+> <Property Name="id" />
+3825c3983
+< <Property Name="name">group</Property>
+---
+> <Property Name="name">user</Property>
+3829c3987
+< <Property Name="name">user</Property>
+---
+> <Property Name="name">group</Property>
+3836c3994
+< <Property Name="id">listAliases</Property>
+---
+> <Property Name="id" />
+3838c3996
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+3856c4014
+< <Property Name="id">addAlias</Property>
+---
+> <Property Name="id" />
+3876c4034
+< <Property Name="id">removeAlias</Property>
+---
+> <Property Name="id" />
+3898a4057,4176
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/allproxies ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">proxyList</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/allsharedaddressbooks ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">sharedAddressBookList</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/allsharedcalendars ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">sharedCalendarList</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/allsharedfolders ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">sharedFolderList</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/calendarssharedby ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/calendarssharedwith ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+3900c4178
+< <Property Name="id">getClientOptions</Property>
+---
+> <Property Name="id" />
+3902c4180
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">clientOptions</Property>
+3924c4202
+< <Property Name="id">setClientOptions</Property>
+---
+> <Property Name="id" />
+3948c4226
+< <Property Name="id">clearDirectoryLink</Property>
+---
+> <Property Name="id" />
+3968c4246
+< <Property Name="id">getDirectoryLink</Property>
+---
+> <Property Name="id" />
+3988c4266
+< <Property Name="id">putDirectoryLink</Property>
+---
+> <Property Name="id" />
+4008c4286
+< <Property Name="id">ldapPublishUser</Property>
+---
+> <Property Name="id" />
+4028c4306,4326
+< <Property Name="id">ldapSyncUser</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">syncResult</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/syncpicture ::POST</Property>
+> <Property Name="id" />
+4048c4346
+< <Property Name="id">getAllEmailAddresses</Property>
+---
+> <Property Name="id" />
+4066a4365,4404
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/folderssharedby ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/folderssharedwith ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+4068c4406
+< <Property Name="id">removeAllGroupMemberships</Property>
+---
+> <Property Name="id" />
+4088c4426
+< <Property Name="id">listGroupMemberships</Property>
+---
+> <Property Name="id" />
+4108c4446
+< <Property Name="id">addGroupMembership</Property>
+---
+> <Property Name="id" />
+4128c4466
+< <Property Name="id">updateGroupMemberships</Property>
+---
+> <Property Name="id" />
+4148c4486
+< <Property Name="id">removeGroupMembership</Property>
+---
+> <Property Name="id" />
+4172c4510
+< <Property Name="id">updateGroupMembership</Property>
+---
+> <Property Name="id" />
+4196c4534
+< <Property Name="id">gwcheck</Property>
+---
+> <Property Name="id" />
+4216c4554
+< <Property Name="id">loadCheckOptions</Property>
+---
+> <Property Name="id" />
+4236c4574
+< <Property Name="id">saveCheckOptions</Property>
+---
+> <Property Name="id" />
+4256c4594
+< <Property Name="id">info</Property>
+---
+> <Property Name="id" />
+4258c4596
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">userInfo</Property>
+4275,4276c4613,4614
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/nicknames ::GET</Property>
+< <Property Name="id">nicknames</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/mailboxstats ::GET</Property>
+> <Property Name="id" />
+4278c4616
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">mailboxstats</Property>
+4295,4296c4633,4634
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/replicate ::POST</Property>
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/messengerlink/{messengerId} ::DELETE</Property>
+> <Property Name="id" />
+4308a4647,4650
+> <Property Name="name">messengerId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4311a4654,4657
+> <Property>
+> <Property Name="name">action</Property>
+> <Property Name="style">query</Property>
+> </Property>
+4315,4316c4661,4662
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/resources ::GET</Property>
+< <Property Name="id">resources</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/messengerlink/{messengerId} ::GET</Property>
+> <Property Name="id" />
+4318c4664
+< <Property Name="ResponseTypes">list</Property>
+---
+> <Property Name="ResponseTypes">messengeruser</Property>
+4328a4675,4678
+> <Property Name="name">messengerId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4335,4336c4685,4686
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restorearea ::GET</Property>
+< <Property Name="id">getRestoreArea</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/messengerlink/{messengerId} ::POST</Property>
+> <Property Name="id" />
+4338c4688
+< <Property Name="ResponseTypes">restoreArea</Property>
+---
+> <Property Name="ResponseTypes" />
+4348a4699,4702
+> <Property Name="name">messengerId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4355,4356c4709,4710
+< <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restoremailbox ::PUT</Property>
+< <Property Name="id">restoreMailbox</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/messengerlink/{messengerId}/messengeruser/{msgrUserId} ::PUT</Property>
+> <Property Name="id" />
+4364a4719,4722
+> <Property Name="name">msgrUserId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4368a4727,4730
+> <Property Name="name">messengerId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4375,4376c4737,4738
+< <Property Name="httpIdent">domains/{domain}/replicate ::POST</Property>
+< <Property Name="id">replicate</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/messengerlinks ::GET</Property>
+> <Property Name="id" />
+4378c4740
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">messengerlist</Property>
+4379a4742,4746
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+4382a4750,4754
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4385,4386c4757,4758
+< <Property Name="httpIdent">domains/attributes ::GET</Property>
+< <Property Name="id">getAvailableAttributes</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/nicknames ::GET</Property>
+> <Property Name="id" />
+4388,4389c4760,4774
+< <Property Name="ResponseTypes" />
+< <Property Name="Params" />
+---
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4392,4393c4777,4778
+< <Property Name="httpIdent">node/agents/{agent} ::DELETE</Property>
+< <Property Name="id">deleteAgent</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/personalsignatures ::GET</Property>
+> <Property Name="id" />
+4394a4780,4799
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/personalsignatures ::POST</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userPersonalSignature</Property>
+4398c4803
+< <Property Name="name">agent</Property>
+---
+> <Property Name="name">postoffice</Property>
+4402,4403c4807,4808
+< <Property Name="name">deleteFiles</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+4406,4407c4811,4812
+< <Property Name="name">gwiaSubDir</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+4412,4415c4817,4820
+< <Property Name="httpIdent">node/agents/{agent}/sslcerts ::POST</Property>
+< <Property Name="id">generateAgentCert</Property>
+< <Property Name="RequestType">csrParams</Property>
+< <Property Name="ResponseTypes">sslfiles</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/personalsignatures ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">personalsignaturelist</Property>
+> <Property Name="ResponseTypes" />
+4417c4822,4823
+< <Property Name="name">agent</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+4419a4826,4834
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4422,4423c4837,4838
+< <Property Name="httpIdent">node/certificates ::GET</Property>
+< <Property Name="id">certificates</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/personalsignatures/{signatureId} ::DELETE</Property>
+> <Property Name="id" />
+4425c4840
+< <Property Name="ResponseTypes">restFile</Property>
+---
+> <Property Name="ResponseTypes" />
+4427,4428c4842,4857
+< <Property Name="name">queryFilter</Property>
+< <Property Name="style">query</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">signatureId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+4432,4433c4861,4886
+< <Property Name="httpIdent">node/certificates/{filename} ::DELETE</Property>
+< <Property Name="id">deleteCert</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/personalsignatures/{signatureId} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userPersonalSignature</Property>
+> <Property Name="ResponseTypes" />
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">signatureId</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/picture ::DELETE</Property>
+> <Property Name="id" />
+4437c4890,4899
+< <Property Name="name">filename</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+4439a4902
+> </Property>
+4442,4443c4905,4906
+< <Property Name="httpIdent">node/certificates/{filename} ::GET</Property>
+< <Property Name="id">downloadCert</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/picture ::GET</Property>
+> <Property Name="id" />
+4447c4910,4919
+< <Property Name="name">filename</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+4449a4922
+> </Property>
+4452,4453c4925,4926
+< <Property Name="httpIdent">node/certificates/{filename} ::PUT</Property>
+< <Property Name="id">storeCert</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/picture ::PUT</Property>
+> <Property Name="id" />
+4457c4930,4935
+< <Property Name="name">filename</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+4459a4938,4942
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4462,4463c4945,4946
+< <Property Name="httpIdent">node/config ::GET</Property>
+< <Property Name="id">config</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/proxiesaccessedby ::GET</Property>
+> <Property Name="id" />
+4465,4466c4948,4962
+< <Property Name="ResponseTypes">nodeConfig</Property>
+< <Property Name="Params" />
+---
+> <Property Name="ResponseTypes">list</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4469,4470c4965,4966
+< <Property Name="httpIdent">node/databases ::GET</Property>
+< <Property Name="id">listDatabases</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/proxiesgrantedby ::GET</Property>
+> <Property Name="id" />
+4473c4969,4982
+< <Property Name="Params" />
+---
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4476,4478c4985,4987
+< <Property Name="httpIdent">node/databases ::POST</Property>
+< <Property Name="id">mountDatabase</Property>
+< <Property Name="RequestType">nodeDbInfo</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/proxy/{proxyid} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userAccessControl</Property>
+4480c4989,5006
+< <Property Name="Params" />
+---
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">proxyid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4483,4484c5009,5010
+< <Property Name="httpIdent">node/databases/{id} ::GET</Property>
+< <Property Name="id">getDatabaseInfo</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/replicate ::POST</Property>
+> <Property Name="id" />
+4486c5012
+< <Property Name="ResponseTypes">nodeDbInfo</Property>
+---
+> <Property Name="ResponseTypes" />
+4489c5015
+< <Property Name="name">id</Property>
+---
+> <Property Name="name">postoffice</Property>
+4493,4494c5019,5024
+< <Property Name="name">checklock</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+4499,4500c5029,5030
+< <Property Name="httpIdent">node/databases/{id}/file ::GET</Property>
+< <Property Name="id">getDatabaseFile</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/resources ::GET</Property>
+> <Property Name="id" />
+4502c5032
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+4504c5034,5043
+< <Property Name="name">id</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+4506a5046
+> </Property>
+4509,4510c5049,5050
+< <Property Name="httpIdent">node/databases/{id}/file ::PUT</Property>
+< <Property Name="id">putDatabaseFile</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restorearea ::GET</Property>
+> <Property Name="id" />
+4514c5054,5055
+< <Property Name="name">id</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+4516a5058,5066
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4519,4520c5069,5070
+< <Property Name="httpIdent">node/files{folders: (/.*)?} ::GET</Property>
+< <Property Name="id">browse</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/restoremailbox ::PUT</Property>
+> <Property Name="id" />
+4522c5072
+< <Property Name="ResponseTypes">restFile</Property>
+---
+> <Property Name="ResponseTypes" />
+4525c5075
+< <Property Name="name">folders</Property>
+---
+> <Property Name="name">postoffice</Property>
+4529,4530c5079,5080
+< <Property Name="name">queryFolders</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+4533,4534c5083,5084
+< <Property Name="name">queryFiles</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+4535a5086,5093
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/rule/{ruleid} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userRule</Property>
+> <Property Name="ResponseTypes" />
+> <Property Name="Params">
+4537,4538c5095,5096
+< <Property Name="name">queryFilter</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+4541,4542c5099,5108
+< <Property Name="name">filterType</Property>
+< <Property Name="style">query</Property>
+---
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">ruleid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+4547,4548c5113,5114
+< <Property Name="httpIdent">node/maintenance ::GET</Property>
+< <Property Name="id">listMaintenanceJobs</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/rules ::GET</Property>
+> <Property Name="id" />
+4551c5117,5130
+< <Property Name="Params" />
+---
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4554,4556c5133,5135
+< <Property Name="httpIdent">node/maintenance ::POST</Property>
+< <Property Name="id">runMaintenance</Property>
+< <Property Name="RequestType">maintenanceOptions</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/sharedfolders ::DELETE</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+4558c5137,5150
+< <Property Name="Params" />
+---
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+4561,4562c5153,5154
+< <Property Name="httpIdent">node/maintenance/{id} ::DELETE</Property>
+< <Property Name="id">removeMaintenanceJob</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/sharedfolders ::GET</Property>
+> <Property Name="id" />
+4563a5156,5175
+> <Property Name="ResponseTypes">sharedFolders</Property>
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/sharedfolders ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">sharedFolderAction</Property>
+4566c5178,5187
+< <Property Name="name">id</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+4568a5190
+> </Property>
+4571,4574c5193,5196
+< <Property Name="httpIdent">node/maintenance/{id} ::GET</Property>
+< <Property Name="id">getMaintenanceJob</Property>
+< <Property Name="RequestType" />
+< <Property Name="ResponseTypes">asyncStatus</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/vacationrule ::POST</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userVacationRule</Property>
+> <Property Name="ResponseTypes" />
+4576c5198,5207
+< <Property Name="name">id</Property>
+---
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+4578a5210
+> </Property>
+4581,4582c5213,5238
+< <Property Name="httpIdent">node/manageservice ::POST</Property>
+< <Property Name="id">manageService</Property>
+---
+> <Property Name="httpIdent">domains/{domain}/postoffices/{postoffice}/users/{user}/vacationrule/{ruleid} ::PUT</Property>
+> <Property Name="id" />
+> <Property Name="RequestType">userVacationRule</Property>
+> <Property Name="ResponseTypes" />
+> <Property Name="Params">
+> <Property>
+> <Property Name="name">postoffice</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">ruleid</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> <Property>
+> <Property Name="name">user</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/{domain}/replicate ::POST</Property>
+> <Property Name="id" />
+4584a5241,5250
+> <Property Name="Params">
+> <Property Name="name">domain</Property>
+> <Property Name="style">template</Property>
+> </Property>
+> </Object>
+> <Object>
+> <Property Name="httpIdent">domains/attributes ::GET</Property>
+> <Property Name="id" />
+> <Property Name="RequestType" />
+> <Property Name="ResponseTypes">columnInfo</Property>
+4589c5255
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+4599c5265
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+4609c5275
+< <Property Name="id">objectType</Property>
+---
+> <Property Name="id" />
+4619c5285
+< <Property Name="id">list</Property>
+---
+> <Property Name="id" />
+4621c5287
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+4626,4627c5292,5293
+< <Property Name="id">create</Property>
+< <Property Name="RequestType">customPreference</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+4633c5299
+< <Property Name="id">listInGroup</Property>
+---
+> <Property Name="id" />
+4635c5301
+< <Property Name="ResponseTypes" />
+---
+> <Property Name="ResponseTypes">list</Property>
+4643,4644c5309,5310
+< <Property Name="id">createInGroup</Property>
+< <Property Name="RequestType">customPreference</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
+4653c5319
+< <Property Name="id">delete</Property>
+---
+> <Property Name="id" />
+4669c5335
+< <Property Name="id">object</Property>
+---
+> <Property Name="id" />
+4685,4686c5351,5352
+< <Property Name="id">update</Property>
+< <Property Name="RequestType">customPreference</Property>
+---
+> <Property Name="id" />
+> <Property Name="RequestType" />
