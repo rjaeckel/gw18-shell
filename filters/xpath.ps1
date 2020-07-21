@@ -14,13 +14,13 @@ filter Add-NamespaceManager ([hashtable]$ns){
     #return $mgr -as [System.Xml.XmlNamespaceManager]
 }
 # 
-filter Invoke-XPathExpression ($expr,[string]$attr) {
+filter Invoke-XPathExpression ($expr, $attr) {
     ($_ -is [System.Xml.XPath.IXPathNavigable]) -or (&{throw "Invalid Input"}) >$null
     #"& $($MyInvocation.MyCommand) '$expr' '$attr'" | Write-Host -BackgroundColor DarkGray
     $mgr = [System.Xml.XmlNamespaceManager]$_.OwnerDocument.NsMgr
     try {
         if($attr) {
-            $_|% SelectNodes $expr $mgr -ea stop |% $attr
+            $_|% SelectNodes $expr $mgr -ea stop |% $attr @args
         } else {
             $_|% SelectNodes $expr $mgr -ea Stop
         }

@@ -4,10 +4,10 @@
 $sanitize_regex = '[^a-z0-9_]'
 
 # creates xpath parameter handler
-filter xpArg { # result ist placed in "" 
+filter xpArg ([char]$compare='='){ # result ist placed in "" 
     $s_param=$_ -replace $sanitize_regex,''
     #"& xpArg: $xp $s_param" | Write-Host -BackgroundColor DarkGray
-    'if( {1} ){{ "@{0}{2}" }}' -F $_,"`$$s_param","='`$$s_param'" #| ConvertTo-ScriptBlock
+    'if( {1} ){{ "@{0}{2}" }}' -F $_,"`$$s_param","$compare'`$$s_param'" #| ConvertTo-ScriptBlock
 }
 
 
@@ -32,7 +32,7 @@ function mk_xpathElementFilter ($elem) {
     $filterScript = (xpFilterScript $args) -join "`n" # |ConvertTo-ScriptBlock 
     ## end filter str 
     
-    $sb = ("FILTER $elem ( [string]`$scope,[string]`$having,[string]`$attr$args_Str ){`n"+
+    $sb = ("FILTER $elem ( [string]`$scope,[string]`$having,`$attr$args_Str ){`n"+
         "$filterScript"+
         "`$_|xpath `"`${scope}wadl:${elem}`${filterstr}`" -attr `$attr } ")
     
