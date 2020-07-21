@@ -33,13 +33,13 @@ function mk_xpathElementFilter ($elem) {
     ## end filter str 
     
     $sb = ("FILTER $elem ( [string]`$scope,[string]`$having,`$attr$args_Str ){`n"+
-        "$filterScript"+
-        "`$_|xpath `"`${scope}wadl:${elem}`${filterstr}`" -attr `$attr } ")
+        "$filterScript`n"+
+        "`$_|xpath `"`${scope}wadl:${elem}`${filterstr}`" -attr `$attr`n} ")
     
     # debug filterscript
     #"& mkfilter:<$elem> $args ($s_args)" | Write-Host -BackgroundColor DarkGray
     #"& mkfilter: $sb" | Write-Host -BackgroundColor DarkMagenta
-    $sb|ConvertTo-ScriptBlock
+    $sb|ConvertTo-ScriptBlock # | Tee-Object -FilePath "$PSScriptRoot/../out/filter.$elem.out.ps1"
     
 }
 
