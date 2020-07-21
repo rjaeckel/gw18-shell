@@ -39,12 +39,13 @@ $wadl | add-prop wadlMethods {
 
         $_ | add-prop RequestParams {@(
             $this|param -scope wadl:request/ |
-                Select-Object name, style # ,@{N='DocText';E={$_|docText}}
+                Select-Object name, style | # ,@{N='DocText';E={$_|docText}}
+                    Sort-Object name
             )}
         $_ | add-prop ResourceParams {@(
             $this|param -scope ../ |% {
-                $_ | add-prop placeholder { "{{{0}}}" -F $_.Name }
-                $_ | add-prop pathOffset { ($this | path).indexOf("{0}" -F $_.placeholder ) }
+                $_ | add-prop placeholder { "{{{0}}}" -F $this.name }
+                $_ | add-prop pathOffset { ($this | path).indexOf("{0}" -F $this.placeholder ) }
                 $_ } |
                     Sort-Object pathOffset |
                     Select-Object name, style #,@{N='DocText';E={$_|docText}}
