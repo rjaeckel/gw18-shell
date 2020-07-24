@@ -6,7 +6,7 @@
 . (mk_xpathElementFilter method '@name' '@id')
 . (mk_xpathElementFilter response '@status')
 . (mk_xpathElementFilter representation '@element' '@mediaType')
-. (mk_xpathElementFilter doc '@xml:Lang')
+. (mk_xpathElementFilter doc '@xml:lang')
 . (mk_xpathElementFilter include '@href')
 
 
