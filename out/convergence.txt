@@ -1,0 +1,3362 @@
+
+httpID       : async :: DELETE
+path         : async
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearAllComplete
+Query        : 
+
+httpID       : async :: GET
+path         : async
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : ?state
+
+httpID       : async/{id} :: DELETE
+path         : async/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : async/{id} :: GET
+path         : async/{id}
+method       : GET
+RequestType  : 
+ResponseType : asyncStatus
+IDName       : get
+Query        : 
+
+httpID       : async/{id}/file :: GET
+path         : async/{id}/file
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : file
+Query        : 
+
+httpID       : diagnostics/attributes :: GET
+path         : diagnostics/attributes
+method       : GET
+RequestType  : 
+ResponseType : attributeMap
+IDName       : listAttributes
+Query        : ?locale
+
+httpID       : diagnostics/index :: GET
+path         : diagnostics/index
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listIndices
+Query        : 
+
+httpID       : diagnostics/index/{index} :: GET
+path         : diagnostics/index/{index}
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : readIndex
+Query        : 
+
+httpID       : diagnostics/object/{id} :: GET
+path         : diagnostics/object/{id}
+method       : GET
+RequestType  : 
+ResponseType : objectAttributes
+IDName       : object
+Query        : 
+
+httpID       : domains :: GET
+path         : domains
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains :: POST
+path         : domains
+method       : POST
+RequestType  : domain
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain} :: DELETE
+path         : domains/{domain}
+method       : DELETE
+RequestType  : 
+ResponseType : warnings
+IDName       : delete
+Query        : ?deleteFiles
+
+httpID       : domains/{domain} :: GET
+path         : domains/{domain}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain} :: PUT
+path         : domains/{domain}
+method       : PUT
+RequestType  : domain
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/acl :: GET
+path         : domains/{domain}/acl
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAccessControl
+Query        : 
+
+httpID       : domains/{domain}/acl :: PUT
+path         : domains/{domain}/acl
+method       : PUT
+RequestType  : batchupdate
+ResponseType : 
+IDName       : updateAccessControl
+Query        : 
+
+httpID       : domains/{domain}/addressbook/fields :: GET
+path         : domains/{domain}/addressbook/fields
+method       : GET
+RequestType  : 
+ResponseType : addressBookField
+IDName       : getAddressBookFields
+Query        : 
+
+httpID       : domains/{domain}/addressbook/labels :: GET
+path         : domains/{domain}/addressbook/labels
+method       : GET
+RequestType  : 
+ResponseType : addressBookField
+IDName       : getAddressBookLabels
+Query        : 
+
+httpID       : domains/{domain}/addressbook/labels/{field} :: DELETE
+path         : domains/{domain}/addressbook/labels/{field}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearAddressBookLabel
+Query        : 
+
+httpID       : domains/{domain}/addressbook/labels/{field} :: PUT
+path         : domains/{domain}/addressbook/labels/{field}
+method       : PUT
+RequestType  : addressBookField
+ResponseType : 
+IDName       : setAddressBookLabel
+Query        : 
+
+httpID       : domains/{domain}/addressbook/view :: GET
+path         : domains/{domain}/addressbook/view
+method       : GET
+RequestType  : 
+ResponseType : addressBookView
+IDName       : getAddressBookView
+Query        : 
+
+httpID       : domains/{domain}/addressbook/view :: PUT
+path         : domains/{domain}/addressbook/view
+method       : PUT
+RequestType  : addressBookView
+ResponseType : 
+IDName       : putAddressBookView
+Query        : 
+
+httpID       : domains/{domain}/administrator :: DELETE
+path         : domains/{domain}/administrator
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearAdministrator
+Query        : 
+
+httpID       : domains/{domain}/administrator :: GET
+path         : domains/{domain}/administrator
+method       : GET
+RequestType  : 
+ResponseType : administrator
+IDName       : getAdministrator
+Query        : 
+
+httpID       : domains/{domain}/administrator :: PUT
+path         : domains/{domain}/administrator
+method       : PUT
+RequestType  : administrator
+ResponseType : 
+IDName       : setAdministrator
+Query        : 
+
+httpID       : domains/{domain}/clientoptions :: GET
+path         : domains/{domain}/clientoptions
+method       : GET
+RequestType  : 
+ResponseType : clientOptions
+IDName       : getClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/clientoptions :: PUT
+path         : domains/{domain}/clientoptions
+method       : PUT
+RequestType  : clientOptions
+ResponseType : 
+IDName       : setClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/customaddresses :: GET
+path         : domains/{domain}/customaddresses
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getCustomAddresses
+Query        : 
+
+httpID       : domains/{domain}/customaddresses/test :: GET
+path         : domains/{domain}/customaddresses/test
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : testAddresses
+Query        : ?testAddress
+
+httpID       : domains/{domain}/directorylinks :: POST
+path         : domains/{domain}/directorylinks
+method       : POST
+RequestType  : dirLink
+ResponseType : syncResultSummary
+IDName       : ldapLink
+Query        : 
+
+httpID       : domains/{domain}/directorylinks/publish :: POST
+path         : domains/{domain}/directorylinks/publish
+method       : POST
+RequestType  : dirPublish
+ResponseType : syncContainerSummary
+IDName       : ldapPublish
+Query        : 
+
+httpID       : domains/{domain}/gatewaysubdirs :: GET
+path         : domains/{domain}/gatewaysubdirs
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listGatewaySubDirs
+Query        : 
+
+httpID       : domains/{domain}/gwias :: GET
+path         : domains/{domain}/gwias
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/gwias :: POST
+path         : domains/{domain}/gwias
+method       : POST
+RequestType  : internetAgent
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia} :: DELETE
+path         : domains/{domain}/gwias/{gwia}
+method       : DELETE
+RequestType  : 
+ResponseType : warnings
+IDName       : delete
+Query        : ?deleteFiles
+
+httpID       : domains/{domain}/gwias/{gwia} :: GET
+path         : domains/{domain}/gwias/{gwia}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia} :: PUT
+path         : domains/{domain}/gwias/{gwia}
+method       : PUT
+RequestType  : internetAgent
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/gwias/{gwia}/administrators :: GET
+path         : domains/{domain}/gwias/{gwia}/administrators
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAdministrators
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/administrators :: POST
+path         : domains/{domain}/gwias/{gwia}/administrators
+method       : POST
+RequestType  : gatewayAdministrator
+ResponseType : 
+IDName       : addAdministrator
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/administrators/{id} :: DELETE
+path         : domains/{domain}/gwias/{gwia}/administrators/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAdministrator
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/administrators/{id} :: PUT
+path         : domains/{domain}/gwias/{gwia}/administrators/{id}
+method       : PUT
+RequestType  : gatewayAdministrator
+ResponseType : 
+IDName       : updateAdministrator
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/aliases :: GET
+path         : domains/{domain}/gwias/{gwia}/aliases
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAliases
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice :: GET
+path         : domains/{domain}/gwias/{gwia}/classofservice
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listClassesOfService
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice :: POST
+path         : domains/{domain}/gwias/{gwia}/classofservice
+method       : POST
+RequestType  : classOfService
+ResponseType : 
+IDName       : createClassOfService
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname} :: DELETE
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : deleteClassOfService
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname} :: GET
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}
+method       : GET
+RequestType  : 
+ResponseType : classOfService
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname} :: PUT
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}
+method       : PUT
+RequestType  : classOfService
+ResponseType : 
+IDName       : updateClassOfService
+Query        : ?attrs
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members :: GET
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listClassOfServiceMembers
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members :: POST
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members
+method       : POST
+RequestType  : cosmembership
+ResponseType : 
+IDName       : addCoSMember
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members/{member} :: DELETE
+path         : domains/{domain}/gwias/{gwia}/classofservice/{cosname}/members/{member}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeCosMember
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/info :: GET
+path         : domains/{domain}/gwias/{gwia}/info
+method       : GET
+RequestType  : 
+ResponseType : gwiaInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/manage :: GET
+path         : domains/{domain}/gwias/{gwia}/manage
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : manageAgent
+Query        : ?command
+
+httpID       : domains/{domain}/gwias/{gwia}/recoverDb :: GET
+path         : domains/{domain}/gwias/{gwia}/recoverDb
+method       : GET
+RequestType  : 
+ResponseType : gwiarecoverdbresult
+IDName       : recover
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelayallowexception :: GET
+path         : domains/{domain}/gwias/{gwia}/smtprelayallowexception
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listSmtpAllowExceptions
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelayallowexception :: POST
+path         : domains/{domain}/gwias/{gwia}/smtprelayallowexception
+method       : POST
+RequestType  : smtprelayexception
+ResponseType : 
+IDName       : addSmtpAllowException
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelayallowexception/{fromUrl}/{toUrl} :: DELETE
+path         : domains/{domain}/gwias/{gwia}/smtprelayallowexception/{fromUrl}/{toUrl}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeSmtpAllowException
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelaypreventexception :: GET
+path         : domains/{domain}/gwias/{gwia}/smtprelaypreventexception
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listSmtpPreventExceptions
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelaypreventexception :: POST
+path         : domains/{domain}/gwias/{gwia}/smtprelaypreventexception
+method       : POST
+RequestType  : smtprelayexception
+ResponseType : 
+IDName       : addSmtpPreventException
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/smtprelaypreventexception/{fromUrl}/{toUrl} :: DELETE
+path         : domains/{domain}/gwias/{gwia}/smtprelaypreventexception/{fromUrl}/{toUrl}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeSmtpPreventException
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/sslcerts :: POST
+path         : domains/{domain}/gwias/{gwia}/sslcerts
+method       : POST
+RequestType  : csrParams
+ResponseType : sslfiles
+IDName       : generateCert
+Query        : ?commit
+
+httpID       : domains/{domain}/gwias/{gwia}/status :: GET
+path         : domains/{domain}/gwias/{gwia}/status
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : status
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/testAccessControl/{id} :: GET
+path         : domains/{domain}/gwias/{gwia}/testAccessControl/{id}
+method       : GET
+RequestType  : 
+ResponseType : internetAgentAccessControlTest
+IDName       : test
+Query        : 
+
+httpID       : domains/{domain}/gwias/{gwia}/validateDb :: GET
+path         : domains/{domain}/gwias/{gwia}/validateDb
+method       : GET
+RequestType  : 
+ResponseType : gwiavalidatedbresult
+IDName       : validate
+Query        : 
+
+httpID       : domains/{domain}/info :: GET
+path         : domains/{domain}/info
+method       : GET
+RequestType  : 
+ResponseType : domainInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/links :: GET
+path         : domains/{domain}/links
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listLinks
+Query        : ?direction
+
+httpID       : domains/{domain}/links/{link} :: DELETE
+path         : domains/{domain}/links/{link}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : deleteLink
+Query        : 
+
+httpID       : domains/{domain}/links/{link} :: GET
+path         : domains/{domain}/links/{link}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getLink
+Query        : 
+
+httpID       : domains/{domain}/links/{link} :: PUT
+path         : domains/{domain}/links/{link}
+method       : PUT
+RequestType  : domainLink
+ResponseType : 
+IDName       : putLink
+Query        : ?attrs
+
+httpID       : domains/{domain}/maintenance :: POST
+path         : domains/{domain}/maintenance
+method       : POST
+RequestType  : maintenanceOptions
+ResponseType : 
+IDName       : systemMaintenance
+Query        : 
+
+httpID       : domains/{domain}/moverequests :: GET
+path         : domains/{domain}/moverequests
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getMoveRequests
+Query        : 
+
+httpID       : domains/{domain}/mta :: DELETE
+path         : domains/{domain}/mta
+method       : DELETE
+RequestType  : 
+ResponseType : warnings
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/mta :: GET
+path         : domains/{domain}/mta
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/mta :: PUT
+path         : domains/{domain}/mta
+method       : PUT
+RequestType  : mta
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/mta/manage :: GET
+path         : domains/{domain}/mta/manage
+method       : GET
+RequestType  : 
+ResponseType : nodeStatus
+IDName       : manageAgent
+Query        : ?command
+
+httpID       : domains/{domain}/mta/refevents :: GET
+path         : domains/{domain}/mta/refevents
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listScheduledEvents
+Query        : 
+
+httpID       : domains/{domain}/mta/refevents :: PUT
+path         : domains/{domain}/mta/refevents
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateScheduledEvents
+Query        : 
+
+httpID       : domains/{domain}/mta/refevents/{eventName} :: DELETE
+path         : domains/{domain}/mta/refevents/{eventName}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeScheduledEvent
+Query        : 
+
+httpID       : domains/{domain}/mta/refevents/{eventName} :: PUT
+path         : domains/{domain}/mta/refevents/{eventName}
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : addScheduledEvent
+Query        : 
+
+httpID       : domains/{domain}/mta/sslcerts :: POST
+path         : domains/{domain}/mta/sslcerts
+method       : POST
+RequestType  : csrParams
+ResponseType : sslfiles
+IDName       : generateCert
+Query        : ?commit
+
+httpID       : domains/{domain}/mta/status :: GET
+path         : domains/{domain}/mta/status
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : status
+Query        : 
+
+httpID       : domains/{domain}/postoffices :: GET
+path         : domains/{domain}/postoffices
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices :: POST
+path         : domains/{domain}/postoffices
+method       : POST
+RequestType  : postOffice
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}
+method       : DELETE
+RequestType  : 
+ResponseType : warnings
+IDName       : delete
+Query        : ?deleteFiles
+
+httpID       : domains/{domain}/postoffices/{postoffice} :: GET
+path         : domains/{domain}/postoffices/{postoffice}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}
+method       : PUT
+RequestType  : postOffice
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/acl :: GET
+path         : domains/{domain}/postoffices/{postoffice}/acl
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAccessControl
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/acl :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/acl
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateAccessControl
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/aliases :: GET
+path         : domains/{domain}/postoffices/{postoffice}/aliases
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAliases
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/aliases :: POST
+path         : domains/{domain}/postoffices/{postoffice}/aliases
+method       : POST
+RequestType  : gatewayAlias
+ResponseType : 
+IDName       : addAlias
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/aliases/{type} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/aliases/{type}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAlias
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/bumpclientupdate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/bumpclientupdate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : incrementClientUpdateBumpNumber
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/clientoptions :: GET
+path         : domains/{domain}/postoffices/{postoffice}/clientoptions
+method       : GET
+RequestType  : 
+ResponseType : clientOptions
+IDName       : getClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/clientoptions :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/clientoptions
+method       : PUT
+RequestType  : clientOptions
+ResponseType : 
+IDName       : setClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/directorylinks :: POST
+path         : domains/{domain}/postoffices/{postoffice}/directorylinks
+method       : POST
+RequestType  : dirLink
+ResponseType : 
+IDName       : ldapLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/directorylinks/publish :: POST
+path         : domains/{domain}/postoffices/{postoffice}/directorylinks/publish
+method       : POST
+RequestType  : dirPublish
+ResponseType : syncContainerSummary
+IDName       : ldapPublish
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups
+method       : POST
+RequestType  : group
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}
+method       : PUT
+RequestType  : group
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/acl :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/acl
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAccessControl
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/acl :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/acl
+method       : PUT
+RequestType  : accessControlListUpdate
+ResponseType : 
+IDName       : updateAccessControl
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink
+method       : GET
+RequestType  : 
+ResponseType : directoryLink
+IDName       : getDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink
+method       : PUT
+RequestType  : directoryLink
+ResponseType : 
+IDName       : putDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/publish :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/publish
+method       : POST
+RequestType  : 
+ResponseType : syncResult
+IDName       : ldapPublishUser
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/sync :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/directorylink/sync
+method       : POST
+RequestType  : 
+ResponseType : syncResult
+IDName       : ldapSyncUser
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/emailaddresses :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/emailaddresses
+method       : GET
+RequestType  : 
+ResponseType : emailAddresses
+IDName       : getAllEmailAddresses
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAllGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : groupmemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships
+method       : POST
+RequestType  : membership
+ResponseType : 
+IDName       : addGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships
+method       : PUT
+RequestType  : groupMemberListUpdate
+ResponseType : listUpdateResult
+IDName       : updateGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/groupmemberships/{groupid}
+method       : PUT
+RequestType  : membership
+ResponseType : 
+IDName       : updateGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/info
+method       : GET
+RequestType  : 
+ResponseType : groupInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAllMembers
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listMembers
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members
+method       : POST
+RequestType  : member
+ResponseType : 
+IDName       : addMember
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members
+method       : PUT
+RequestType  : groupMemberListUpdate
+ResponseType : listUpdateResult
+IDName       : updateMembers
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members.csv :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members.csv
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : members_csv
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeMember
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member}
+method       : GET
+RequestType  : 
+ResponseType : member
+IDName       : getMember
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/members/{member}
+method       : PUT
+RequestType  : member
+ResponseType : 
+IDName       : updateMember
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/nicknames :: GET
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/nicknames
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : nicknames
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/groups/{group}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/groups/{group}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/gwcheck :: POST
+path         : domains/{domain}/postoffices/{postoffice}/gwcheck
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : gwcheck
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/gwcheck/load :: POST
+path         : domains/{domain}/postoffices/{postoffice}/gwcheck/load
+method       : POST
+RequestType  : 
+ResponseType : checkOptions
+IDName       : loadCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/gwcheck/save :: POST
+path         : domains/{domain}/postoffices/{postoffice}/gwcheck/save
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : saveCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/info
+method       : GET
+RequestType  : 
+ResponseType : postOfficeInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries
+method       : POST
+RequestType  : library
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}
+method       : PUT
+RequestType  : library
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAccessRights
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights
+method       : POST
+RequestType  : libraryAccessRights
+ResponseType : 
+IDName       : addAccessRights
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights
+method       : PUT
+RequestType  : libraryAccessRightsListUpdate
+ResponseType : listUpdateResult
+IDName       : batchUpdateAccessRights
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAccessRights
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/accessrights/{userid}
+method       : PUT
+RequestType  : libraryAccessRights
+ResponseType : 
+IDName       : updateAccessRights
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listEnabledStorageAreas
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas
+method       : POST
+RequestType  : libraryAreaAccess
+ResponseType : 
+IDName       : enableStorageArea
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas/{area} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/enabledstorageareas/{area}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : disableStorageArea
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : gwcheck
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/load :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/load
+method       : POST
+RequestType  : 
+ResponseType : checkOptions
+IDName       : loadCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/save :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/gwcheck/save
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : saveCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/info
+method       : GET
+RequestType  : 
+ResponseType : libraryInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas :: POST
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas
+method       : POST
+RequestType  : libraryArea
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/libraries/{library}/storageareas/{area}
+method       : PUT
+RequestType  : libraryArea
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/maintenance :: POST
+path         : domains/{domain}/postoffices/{postoffice}/maintenance
+method       : POST
+RequestType  : maintenanceOptions
+ResponseType : 
+IDName       : systemMaintenance
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/moverequests :: GET
+path         : domains/{domain}/postoffices/{postoffice}/moverequests
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getMoveRequests
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames :: GET
+path         : domains/{domain}/postoffices/{postoffice}/nicknames
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames :: POST
+path         : domains/{domain}/postoffices/{postoffice}/nicknames
+method       : POST
+RequestType  : nickname
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}
+method       : PUT
+RequestType  : nickname
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/emailaddresses :: GET
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/emailaddresses
+method       : GET
+RequestType  : 
+ResponseType : emailAddresses
+IDName       : getAllEmailAddresses
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/info
+method       : GET
+RequestType  : 
+ResponseType : nicknameInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/nicknames/{nickname}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas :: GET
+path         : domains/{domain}/postoffices/{postoffice}/poas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas :: POST
+path         : domains/{domain}/postoffices/{postoffice}/poas
+method       : POST
+RequestType  : poa
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}
+method       : DELETE
+RequestType  : 
+ResponseType : warnings
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}
+method       : PUT
+RequestType  : poa
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/manage :: GET
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/manage
+method       : GET
+RequestType  : 
+ResponseType : nodeStatus
+IDName       : manageAgent
+Query        : ?command
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents :: GET
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listScheduledEvents
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateScheduledEvents
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeScheduledEvent
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/refevents/{eventName}
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : addScheduledEvent
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/sslcerts :: POST
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/sslcerts
+method       : POST
+RequestType  : csrParams
+ResponseType : sslfiles
+IDName       : generateCert
+Query        : ?commit
+
+httpID       : domains/{domain}/postoffices/{postoffice}/poas/{poa}/status :: GET
+path         : domains/{domain}/postoffices/{postoffice}/poas/{poa}/status
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : status
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/refldapservers :: GET
+path         : domains/{domain}/postoffices/{postoffice}/refldapservers
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listldapservers
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/refldapservers :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/refldapservers
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : setAssoc2
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/rename :: POST
+path         : domains/{domain}/postoffices/{postoffice}/rename
+method       : POST
+RequestType  : renameRequest
+ResponseType : 
+IDName       : rename
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources
+method       : POST
+RequestType  : resource
+ResponseType : 
+IDName       : createResource
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}
+method       : PUT
+RequestType  : resource
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions
+method       : GET
+RequestType  : 
+ResponseType : clientOptions
+IDName       : getClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/clientoptions
+method       : PUT
+RequestType  : clientOptions
+ResponseType : 
+IDName       : setClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/directorylink/publish :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/directorylink/publish
+method       : POST
+RequestType  : 
+ResponseType : syncResult
+IDName       : ldapPublishUser
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/emailaddresses :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/emailaddresses
+method       : GET
+RequestType  : 
+ResponseType : emailAddresses
+IDName       : getAllEmailAddresses
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAllGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : groupmemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships
+method       : POST
+RequestType  : membership
+ResponseType : 
+IDName       : addGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships
+method       : PUT
+RequestType  : groupMemberListUpdate
+ResponseType : listUpdateResult
+IDName       : updateGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/groupmemberships/{groupid}
+method       : PUT
+RequestType  : membership
+ResponseType : 
+IDName       : updateGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : gwcheck
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/load :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/load
+method       : POST
+RequestType  : 
+ResponseType : checkOptions
+IDName       : loadCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/save :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/gwcheck/save
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : saveCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/info
+method       : GET
+RequestType  : 
+ResponseType : resourceInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/nicknames :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/nicknames
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : nicknames
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/restorearea :: GET
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/restorearea
+method       : GET
+RequestType  : 
+ResponseType : restoreArea
+IDName       : getRestoreArea
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/resources/{resource}/restoremailbox :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/resources/{resource}/restoremailbox
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : restoreMailbox
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/timestamp :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/timestamp
+method       : PUT
+RequestType  : gwtimestamp
+ResponseType : 
+IDName       : setTimeStamp
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users
+method       : POST
+RequestType  : user
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user} :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}
+method       : PUT
+RequestType  : user
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : administeredgroups
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups
+method       : POST
+RequestType  : group
+ResponseType : 
+IDName       : addAdministeredGroup
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateAdministeredGroups
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups/{group} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/administeredgroups/{group}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAdministeredGroup
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAliases
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases
+method       : POST
+RequestType  : gatewayAlias
+ResponseType : 
+IDName       : addAlias
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases/{type} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/aliases/{type}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAlias
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions
+method       : GET
+RequestType  : 
+ResponseType : clientOptions
+IDName       : getClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/clientoptions
+method       : PUT
+RequestType  : clientOptions
+ResponseType : 
+IDName       : setClientOptions
+Query        : ?attrs
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink
+method       : GET
+RequestType  : 
+ResponseType : directoryLink
+IDName       : getDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink
+method       : PUT
+RequestType  : directoryLink
+ResponseType : 
+IDName       : putDirectoryLink
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/publish :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/publish
+method       : POST
+RequestType  : 
+ResponseType : syncResult
+IDName       : ldapPublishUser
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/sync :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/directorylink/sync
+method       : POST
+RequestType  : 
+ResponseType : syncResult
+IDName       : ldapSyncUser
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/emailaddresses :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/emailaddresses
+method       : GET
+RequestType  : 
+ResponseType : emailAddresses
+IDName       : getAllEmailAddresses
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAllGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships
+method       : POST
+RequestType  : membership
+ResponseType : 
+IDName       : addGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships
+method       : PUT
+RequestType  : groupMemberListUpdate
+ResponseType : listUpdateResult
+IDName       : updateGroupMemberships
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid} :: DELETE
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid} :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/groupmemberships/{groupid}
+method       : PUT
+RequestType  : membership
+ResponseType : 
+IDName       : updateGroupMembership
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : gwcheck
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/load :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/load
+method       : POST
+RequestType  : 
+ResponseType : checkOptions
+IDName       : loadCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/save :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/gwcheck/save
+method       : POST
+RequestType  : checkOptions
+ResponseType : 
+IDName       : saveCheckOptions
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/info :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/info
+method       : GET
+RequestType  : 
+ResponseType : userInfo
+IDName       : info
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/nicknames :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/nicknames
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : nicknames
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/replicate :: POST
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/resources :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/resources
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : resources
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/restorearea :: GET
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/restorearea
+method       : GET
+RequestType  : 
+ResponseType : restoreArea
+IDName       : getRestoreArea
+Query        : 
+
+httpID       : domains/{domain}/postoffices/{postoffice}/users/{user}/restoremailbox :: PUT
+path         : domains/{domain}/postoffices/{postoffice}/users/{user}/restoremailbox
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : restoreMailbox
+Query        : 
+
+httpID       : domains/{domain}/replicate :: POST
+path         : domains/{domain}/replicate
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : replicate
+Query        : 
+
+httpID       : domains/attributes :: GET
+path         : domains/attributes
+method       : GET
+RequestType  : 
+ResponseType : columnInfo
+IDName       : getAvailableAttributes
+Query        : 
+
+httpID       : install/async :: GET
+path         : install/async
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listInstallJobs
+Query        : 
+
+httpID       : install/async/{id} :: DELETE
+path         : install/async/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeInstallJob
+Query        : 
+
+httpID       : install/async/{id} :: GET
+path         : install/async/{id}
+method       : GET
+RequestType  : 
+ResponseType : asyncStatus
+IDName       : getInstallJob
+Query        : 
+
+httpID       : install/batch :: POST
+path         : install/batch
+method       : POST
+RequestType  : systemConfigInfo
+ResponseType : batchResult
+IDName       : install
+Query        : 
+
+httpID       : install/config :: GET
+path         : install/config
+method       : GET
+RequestType  : 
+ResponseType : nodeConfig
+IDName       : config
+Query        : 
+
+httpID       : install/configure :: POST
+path         : install/configure
+method       : POST
+RequestType  : sysconfigure
+ResponseType : 
+IDName       : configure
+Query        : 
+
+httpID       : install/dbinfo :: GET
+path         : install/dbinfo
+method       : GET
+RequestType  : 
+ResponseType : dbinfo
+IDName       : lookupDb
+Query        : {?name, ?path}
+
+httpID       : install/defaulttimezones :: GET
+path         : install/defaulttimezones
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getDefaultTimezones
+Query        : 
+
+httpID       : install/domain :: POST
+path         : install/domain
+method       : POST
+RequestType  : dominstall
+ResponseType : 
+IDName       : domain
+Query        : 
+
+httpID       : install/languages :: GET
+path         : install/languages
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getLanguages
+Query        : 
+
+httpID       : install/localedefaulttimezone :: GET
+path         : install/localedefaulttimezone
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getLocaleDefaultTimezoneDescription
+Query        : 
+
+httpID       : install/postoffice :: POST
+path         : install/postoffice
+method       : POST
+RequestType  : poinstall
+ResponseType : 
+IDName       : postoffice
+Query        : 
+
+httpID       : install/services :: GET
+path         : install/services
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getServices
+Query        : 
+
+httpID       : install/system :: POST
+path         : install/system
+method       : POST
+RequestType  : sysinstall
+ResponseType : 
+IDName       : system
+Query        : 
+
+httpID       : install/tokens :: POST
+path         : install/tokens
+method       : POST
+RequestType  : 
+ResponseType : installToken
+IDName       : issueToken
+Query        : 
+
+httpID       : install/tokens/{id} :: GET
+path         : install/tokens/{id}
+method       : GET
+RequestType  : 
+ResponseType : installToken
+IDName       : claimToken
+Query        : 
+
+httpID       : list/{type} :: GET
+path         : list/{type}
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : list/{type} :: PUT
+path         : list/{type}
+method       : PUT
+RequestType  : batchupdate
+ResponseType : batchResult
+IDName       : batchDelete
+Query        : 
+
+httpID       : list/{type}.csv :: GET
+path         : list/{type}.csv
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : csv
+Query        : 
+
+httpID       : list/{type}.csv/{base} :: GET
+path         : list/{type}.csv/{base}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : csv
+Query        : 
+
+httpID       : list/{type}/{base} :: GET
+path         : list/{type}/{base}
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : list/{type}/schema :: GET
+path         : list/{type}/schema
+method       : GET
+RequestType  : 
+ResponseType : querySchema
+IDName       : list
+Query        : ?aliases
+
+httpID       : object/{id} :: DELETE
+path         : object/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : object/{id} :: GET
+path         : object/{id}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : object/type/{id} :: GET
+path         : object/type/{id}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : objectType
+Query        : 
+
+httpID       : prefs :: GET
+path         : prefs
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : prefs :: POST
+path         : prefs
+method       : POST
+RequestType  : customPreference
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : prefs/{group} :: GET
+path         : prefs/{group}
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listInGroup
+Query        : 
+
+httpID       : prefs/{group} :: POST
+path         : prefs/{group}
+method       : POST
+RequestType  : customPreference
+ResponseType : 
+IDName       : createInGroup
+Query        : 
+
+httpID       : prefs/{group}/{name} :: DELETE
+path         : prefs/{group}/{name}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : prefs/{group}/{name} :: GET
+path         : prefs/{group}/{name}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : prefs/{group}/{name} :: PUT
+path         : prefs/{group}/{name}
+method       : PUT
+RequestType  : customPreference
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system :: GET
+path         : system
+method       : GET
+RequestType  : 
+ResponseType : system
+IDName       : object
+Query        : 
+
+httpID       : system :: PUT
+path         : system
+method       : PUT
+RequestType  : system
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/acl :: GET
+path         : system/acl
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAccessControl
+Query        : 
+
+httpID       : system/acl :: PUT
+path         : system/acl
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateAccessControl
+Query        : 
+
+httpID       : system/adminservices :: GET
+path         : system/adminservices
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/adminservices/{objectid} :: GET
+path         : system/adminservices/{objectid}
+method       : GET
+RequestType  : 
+ResponseType : adminService
+IDName       : object
+Query        : 
+
+httpID       : system/adminservices/{objectId}/certificates :: GET
+path         : system/adminservices/{objectId}/certificates
+method       : GET
+RequestType  : 
+ResponseType : restFile
+IDName       : certificateFiles
+Query        : ?queryFilter
+
+httpID       : system/adminservices/{objectId}/certificates :: POST
+path         : system/adminservices/{objectId}/certificates
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : uploadCertificateFile
+Query        : 
+
+httpID       : system/adminservices/{objectId}/certificates/{filename} :: DELETE
+path         : system/adminservices/{objectId}/certificates/{filename}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : deleteCertificateFile
+Query        : 
+
+httpID       : system/adminservices/{objectId}/certificates/{filename} :: PUT
+path         : system/adminservices/{objectId}/certificates/{filename}
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : storeCertificateFile
+Query        : 
+
+httpID       : system/adminservices/{objectId}/config :: GET
+path         : system/adminservices/{objectId}/config
+method       : GET
+RequestType  : 
+ResponseType : nodeConfig
+IDName       : localConfig
+Query        : 
+
+httpID       : system/ca :: GET
+path         : system/ca
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : get
+Query        : 
+
+httpID       : system/ca :: POST
+path         : system/ca
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : issue
+Query        : 
+
+httpID       : system/ca/crl :: GET
+path         : system/ca/crl
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : crl
+Query        : 
+
+httpID       : system/ca/issued :: GET
+path         : system/ca/issued
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : issued
+Query        : 
+
+httpID       : system/ca/issued/{serial} :: DELETE
+path         : system/ca/issued/{serial}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : revokeIssuedCert
+Query        : 
+
+httpID       : system/ca/issued/{serial} :: GET
+path         : system/ca/issued/{serial}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getIssuedCert
+Query        : 
+
+httpID       : system/calpubhosts :: GET
+path         : system/calpubhosts
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/calpubhosts :: POST
+path         : system/calpubhosts
+method       : POST
+RequestType  : calPubHost
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/calpubhosts/{calPubHost} :: DELETE
+path         : system/calpubhosts/{calPubHost}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/calpubhosts/{calPubHost} :: GET
+path         : system/calpubhosts/{calPubHost}
+method       : GET
+RequestType  : 
+ResponseType : calPubHost
+IDName       : object
+Query        : 
+
+httpID       : system/calpubhosts/{calPubHost} :: PUT
+path         : system/calpubhosts/{calPubHost}
+method       : PUT
+RequestType  : calPubHost
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/connecteddomain :: GET
+path         : system/connecteddomain
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : connectedDomain
+Query        : 
+
+httpID       : system/customaddresses :: GET
+path         : system/customaddresses
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/customaddresses :: POST
+path         : system/customaddresses
+method       : POST
+RequestType  : customAddress
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/customaddresses/{customAddress} :: DELETE
+path         : system/customaddresses/{customAddress}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/customaddresses/{customAddress} :: GET
+path         : system/customaddresses/{customAddress}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/customaddresses/{customAddress} :: PUT
+path         : system/customaddresses/{customAddress}
+method       : PUT
+RequestType  : customAddress
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/customaddresses/{customAddress}/associate/{domain} :: DELETE
+path         : system/customaddresses/{customAddress}/associate/{domain}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeCustomAddressesAssociation
+Query        : 
+
+httpID       : system/customaddresses/{customAddress}/associate/{domain} :: POST
+path         : system/customaddresses/{customAddress}/associate/{domain}
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : associateCustomAddresses
+Query        : 
+
+httpID       : system/customaddresses/{customAddress}/test :: GET
+path         : system/customaddresses/{customAddress}/test
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : testAddress
+Query        : {?replaceString, ?searchString, ?testAddress}
+
+httpID       : system/customaddresses/test :: GET
+path         : system/customaddresses/test
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : testAddresses
+Query        : ?testAddress
+
+httpID       : system/defaulttimezones :: GET
+path         : system/defaulttimezones
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getDefaultTimezones
+Query        : 
+
+httpID       : system/directories :: GET
+path         : system/directories
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/directories :: POST
+path         : system/directories
+method       : POST
+RequestType  : directory
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/directories/{directoryId} :: DELETE
+path         : system/directories/{directoryId}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/directories/{directoryId} :: GET
+path         : system/directories/{directoryId}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/directories/{directoryId} :: PUT
+path         : system/directories/{directoryId}
+method       : PUT
+RequestType  : directory
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/directories/{directoryId}/certificate :: DELETE
+path         : system/directories/{directoryId}/certificate
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearCertificate
+Query        : 
+
+httpID       : system/directories/{directoryId}/certificate :: GET
+path         : system/directories/{directoryId}/certificate
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getCertificate
+Query        : 
+
+httpID       : system/directories/{directoryId}/import :: POST
+path         : system/directories/{directoryId}/import
+method       : POST
+RequestType  : dirImport
+ResponseType : 
+IDName       : ldapImport
+Query        : 
+
+httpID       : system/directories/{directoryId}/link :: POST
+path         : system/directories/{directoryId}/link
+method       : POST
+RequestType  : dirLink
+ResponseType : syncResultSummary
+IDName       : ldapLink
+Query        : 
+
+httpID       : system/directories/{directoryId}/publish :: POST
+path         : system/directories/{directoryId}/publish
+method       : POST
+RequestType  : dirPublish
+ResponseType : syncContainerSummary
+IDName       : ldapPublish
+Query        : 
+
+httpID       : system/directories/{directoryId}/schema/group :: GET
+path         : system/directories/{directoryId}/schema/group
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getGroupSchema
+Query        : 
+
+httpID       : system/directories/{directoryId}/schema/user :: GET
+path         : system/directories/{directoryId}/schema/user
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getUserSchema
+Query        : 
+
+httpID       : system/directories/{directoryId}/search :: GET
+path         : system/directories/{directoryId}/search
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : search
+Query        : {?context, ?filter, ?subtree, ?type}
+
+httpID       : system/directories/{directoryId}/sync :: POST
+path         : system/directories/{directoryId}/sync
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : ldapSync
+Query        : 
+
+httpID       : system/directorylinks :: POST
+path         : system/directorylinks
+method       : POST
+RequestType  : dirLink
+ResponseType : 
+IDName       : ldapLink
+Query        : 
+
+httpID       : system/directorylinks/publish :: POST
+path         : system/directorylinks/publish
+method       : POST
+RequestType  : dirPublish
+ResponseType : 
+IDName       : ldapPublish
+Query        : 
+
+httpID       : system/dvas :: GET
+path         : system/dvas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/dvas :: POST
+path         : system/dvas
+method       : POST
+RequestType  : dva
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/dvas/{dva} :: DELETE
+path         : system/dvas/{dva}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/dvas/{dva} :: GET
+path         : system/dvas/{dva}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/dvas/{dva} :: PUT
+path         : system/dvas/{dva}
+method       : PUT
+RequestType  : dva
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/expired :: GET
+path         : system/expired
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : expired
+Query        : 
+
+httpID       : system/externalsystemsync :: GET
+path         : system/externalsystemsync
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getExternalSystemSync
+Query        : 
+
+httpID       : system/externalsystemsync :: POST
+path         : system/externalsystemsync
+method       : POST
+RequestType  : externalsystem
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/externalsystemsync/{externalsystem} :: DELETE
+path         : system/externalsystemsync/{externalsystem}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/externalsystemsync/{externalsystem} :: GET
+path         : system/externalsystemsync/{externalsystem}
+method       : GET
+RequestType  : 
+ResponseType : externalsystem
+IDName       : getExternalSystem
+Query        : 
+
+httpID       : system/externalsystemsync/{externalsystem} :: PUT
+path         : system/externalsystemsync/{externalsystem}
+method       : PUT
+RequestType  : externalsystem
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/externalsystemsync/{externalsystem}/request :: POST
+path         : system/externalsystemsync/{externalsystem}/request
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : request
+Query        : 
+
+httpID       : system/globalsignatures :: GET
+path         : system/globalsignatures
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/globalsignatures :: POST
+path         : system/globalsignatures
+method       : POST
+RequestType  : globalSignature
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/globalsignatures/{name} :: DELETE
+path         : system/globalsignatures/{name}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/globalsignatures/{name} :: GET
+path         : system/globalsignatures/{name}
+method       : GET
+RequestType  : 
+ResponseType : globalSignature
+IDName       : object
+Query        : 
+
+httpID       : system/globalsignatures/{name} :: PUT
+path         : system/globalsignatures/{name}
+method       : PUT
+RequestType  : globalSignature
+ResponseType : 
+IDName       : update
+Query        : 
+
+httpID       : system/info :: GET
+path         : system/info
+method       : GET
+RequestType  : 
+ResponseType : systemInfo
+IDName       : info
+Query        : 
+
+httpID       : system/internetdomains :: GET
+path         : system/internetdomains
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/internetdomains :: POST
+path         : system/internetdomains
+method       : POST
+RequestType  : internetDomain
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/internetdomains/{internetdomain} :: DELETE
+path         : system/internetdomains/{internetdomain}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/internetdomains/{internetdomain} :: GET
+path         : system/internetdomains/{internetdomain}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/internetdomains/{internetdomain} :: PUT
+path         : system/internetdomains/{internetdomain}
+method       : PUT
+RequestType  : internetDomain
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/languages :: GET
+path         : system/languages
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getLanguages
+Query        : 
+
+httpID       : system/ldapservers :: GET
+path         : system/ldapservers
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/ldapservers :: POST
+path         : system/ldapservers
+method       : POST
+RequestType  : ldapServer
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver} :: DELETE
+path         : system/ldapservers/{ldapserver}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver} :: GET
+path         : system/ldapservers/{ldapserver}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver} :: PUT
+path         : system/ldapservers/{ldapserver}
+method       : PUT
+RequestType  : ldapServer
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/ldapservers/{ldapserver}/certificate :: DELETE
+path         : system/ldapservers/{ldapserver}/certificate
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearCertificate
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver}/certificate :: GET
+path         : system/ldapservers/{ldapserver}/certificate
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getCertificate
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver}/certificate :: PUT
+path         : system/ldapservers/{ldapserver}/certificate
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : setCertificate
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver}/refpostoffices :: GET
+path         : system/ldapservers/{ldapserver}/refpostoffices
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listAssoc
+Query        : 
+
+httpID       : system/ldapservers/{ldapserver}/refpostoffices :: PUT
+path         : system/ldapservers/{ldapserver}/refpostoffices
+method       : PUT
+RequestType  : batchupdate
+ResponseType : 
+IDName       : setAssoc2
+Query        : 
+
+httpID       : system/license :: PUT
+path         : system/license
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : 
+Query        : ?attrs
+
+httpID       : system/list/columns/{listId} :: GET
+path         : system/list/columns/{listId}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getAvailableCoumns
+Query        : 
+
+httpID       : system/localelanguagedescription :: GET
+path         : system/localelanguagedescription
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getLocaleLanguageDescription
+Query        : 
+
+httpID       : system/maintenance :: POST
+path         : system/maintenance
+method       : POST
+RequestType  : maintenanceOptions
+ResponseType : 
+IDName       : maintenance
+Query        : 
+
+httpID       : system/moverequests :: DELETE
+path         : system/moverequests
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearAllCompleted
+Query        : 
+
+httpID       : system/moverequests :: GET
+path         : system/moverequests
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/moverequests :: POST
+path         : system/moverequests
+method       : POST
+RequestType  : moveRequest
+ResponseType : batchResult
+IDName       : moveUsers
+Query        : 
+
+httpID       : system/moverequests/{id} :: DELETE
+path         : system/moverequests/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : clearSingle
+Query        : ?clearincomplete
+
+httpID       : system/moverequests/{id}/actions :: POST
+path         : system/moverequests/{id}/actions
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : action
+Query        : ?action
+
+httpID       : system/moverequests/{id}/pending :: GET
+path         : system/moverequests/{id}/pending
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getPendingItems
+Query        : 
+
+httpID       : system/notifications :: GET
+path         : system/notifications
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/notifications :: POST
+path         : system/notifications
+method       : POST
+RequestType  : Notification
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/notifications/{name} :: DELETE
+path         : system/notifications/{name}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/notifications/{name} :: GET
+path         : system/notifications/{name}
+method       : GET
+RequestType  : 
+ResponseType : adminapp
+IDName       : object
+Query        : 
+
+httpID       : system/pending :: GET
+path         : system/pending
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getPending
+Query        : 
+
+httpID       : system/pending/{id} :: DELETE
+path         : system/pending/{id}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : undoPending
+Query        : 
+
+httpID       : system/pending/{id} :: PUT
+path         : system/pending/{id}
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : retryPending
+Query        : 
+
+httpID       : system/platforms :: GET
+path         : system/platforms
+method       : GET
+RequestType  : 
+ResponseType : entry
+IDName       : getPlatforms
+Query        : 
+
+httpID       : system/recover/{connectionid} :: DELETE
+path         : system/recover/{connectionid}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : deleteRecoverConnection
+Query        : 
+
+httpID       : system/recover/{connectionid}/diagnosticsobject/{id} :: GET
+path         : system/recover/{connectionid}/diagnosticsobject/{id}
+method       : GET
+RequestType  : 
+ResponseType : objectAttributes
+IDName       : getRecoverRawObject
+Query        : 
+
+httpID       : system/recover/{connectionid}/recover/{accountid} :: POST
+path         : system/recover/{connectionid}/recover/{accountid}
+method       : POST
+RequestType  : 
+ResponseType : 
+IDName       : RecoverGwAccount
+Query        : 
+
+httpID       : system/recover/{connectionid}/resources :: GET
+path         : system/recover/{connectionid}/resources
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getRecoverResources
+Query        : 
+
+httpID       : system/recover/{connectionid}/resources/{resource} :: GET
+path         : system/recover/{connectionid}/resources/{resource}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getRecoverResource
+Query        : 
+
+httpID       : system/recover/{connectionid}/users :: GET
+path         : system/recover/{connectionid}/users
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : getRecoverUsers
+Query        : 
+
+httpID       : system/recover/{connectionid}/users/{user} :: GET
+path         : system/recover/{connectionid}/users/{user}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : getRecoverUser
+Query        : 
+
+httpID       : system/restoreareas :: GET
+path         : system/restoreareas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/restoreareas :: POST
+path         : system/restoreareas
+method       : POST
+RequestType  : restoreArea
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/restoreareas/{area} :: DELETE
+path         : system/restoreareas/{area}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/restoreareas/{area} :: GET
+path         : system/restoreareas/{area}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/restoreareas/{area} :: PUT
+path         : system/restoreareas/{area}
+method       : PUT
+RequestType  : restoreArea
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/restoreareas/{area}/membership :: GET
+path         : system/restoreareas/{area}/membership
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : membership
+Query        : 
+
+httpID       : system/restoreareas/{area}/membership :: POST
+path         : system/restoreareas/{area}/membership
+method       : POST
+RequestType  : restoreAreaMembership
+ResponseType : 
+IDName       : addMember
+Query        : 
+
+httpID       : system/restoreareas/{area}/membership :: PUT
+path         : system/restoreareas/{area}/membership
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateMembership
+Query        : 
+
+httpID       : system/restoreareas/{area}/membership/{member} :: DELETE
+path         : system/restoreareas/{area}/membership/{member}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeMember
+Query        : 
+
+httpID       : system/scheduledeventactions :: GET
+path         : system/scheduledeventactions
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/scheduledeventactions :: POST
+path         : system/scheduledeventactions
+method       : POST
+RequestType  : scheduledEventAction
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/scheduledeventactions/{actionName} :: DELETE
+path         : system/scheduledeventactions/{actionName}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/scheduledeventactions/{actionName} :: GET
+path         : system/scheduledeventactions/{actionName}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/scheduledeventactions/{actionName} :: PUT
+path         : system/scheduledeventactions/{actionName}
+method       : PUT
+RequestType  : scheduledEventAction
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/scheduledevents :: GET
+path         : system/scheduledevents
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/scheduledevents :: POST
+path         : system/scheduledevents
+method       : POST
+RequestType  : scheduledEvent
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/scheduledevents/{eventName} :: DELETE
+path         : system/scheduledevents/{eventName}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/scheduledevents/{eventName} :: GET
+path         : system/scheduledevents/{eventName}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/scheduledevents/{eventName} :: PUT
+path         : system/scheduledevents/{eventName}
+method       : PUT
+RequestType  : scheduledEvent
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/scheduledevents/{eventName}/actions :: GET
+path         : system/scheduledevents/{eventName}/actions
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : listActions
+Query        : 
+
+httpID       : system/scheduledevents/{eventName}/actions :: PUT
+path         : system/scheduledevents/{eventName}/actions
+method       : PUT
+RequestType  : batchupdate
+ResponseType : listUpdateResult
+IDName       : updateActions
+Query        : 
+
+httpID       : system/scheduledevents/{eventName}/actions/{actionName} :: DELETE
+path         : system/scheduledevents/{eventName}/actions/{actionName}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : removeAction
+Query        : 
+
+httpID       : system/scheduledevents/{eventName}/actions/{actionName} :: PUT
+path         : system/scheduledevents/{eventName}/actions/{actionName}
+method       : PUT
+RequestType  : 
+ResponseType : 
+IDName       : addAction
+Query        : 
+
+httpID       : system/search :: GET
+path         : system/search
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : search
+Query        : {?load, ?text}
+
+httpID       : system/softwareareas :: GET
+path         : system/softwareareas
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/softwareareas :: POST
+path         : system/softwareareas
+method       : POST
+RequestType  : softwareArea
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/softwareareas/{area} :: DELETE
+path         : system/softwareareas/{area}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/softwareareas/{area} :: GET
+path         : system/softwareareas/{area}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : object
+Query        : 
+
+httpID       : system/softwareareas/{area} :: PUT
+path         : system/softwareareas/{area}
+method       : PUT
+RequestType  : softwareArea
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/timezones :: GET
+path         : system/timezones
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/timezones :: POST
+path         : system/timezones
+method       : POST
+RequestType  : timezone
+ResponseType : 
+IDName       : createResource
+Query        : 
+
+httpID       : system/timezones/{timezone} :: DELETE
+path         : system/timezones/{timezone}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/timezones/{timezone} :: GET
+path         : system/timezones/{timezone}
+method       : GET
+RequestType  : 
+ResponseType : timezone
+IDName       : object
+Query        : 
+
+httpID       : system/timezones/{timezone} :: PUT
+path         : system/timezones/{timezone}
+method       : PUT
+RequestType  : timezone
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/trustedapps :: GET
+path         : system/trustedapps
+method       : GET
+RequestType  : 
+ResponseType : list
+IDName       : list
+Query        : 
+
+httpID       : system/trustedapps :: POST
+path         : system/trustedapps
+method       : POST
+RequestType  : trustedapp
+ResponseType : 
+IDName       : create
+Query        : 
+
+httpID       : system/trustedapps/{trustedapp} :: DELETE
+path         : system/trustedapps/{trustedapp}
+method       : DELETE
+RequestType  : 
+ResponseType : 
+IDName       : delete
+Query        : 
+
+httpID       : system/trustedapps/{trustedapp} :: GET
+path         : system/trustedapps/{trustedapp}
+method       : GET
+RequestType  : 
+ResponseType : trustedapp
+IDName       : object
+Query        : 
+
+httpID       : system/trustedapps/{trustedapp} :: PUT
+path         : system/trustedapps/{trustedapp}
+method       : PUT
+RequestType  : trustedapp
+ResponseType : 
+IDName       : update
+Query        : ?attrs
+
+httpID       : system/userbyemail/{email} :: GET
+path         : system/userbyemail/{email}
+method       : GET
+RequestType  : 
+ResponseType : 
+IDName       : lookupUserByEmail
+Query        : 
+
+httpID       : system/whoami :: GET
+path         : system/whoami
+method       : GET
+RequestType  : 
+ResponseType : loginDetail
+IDName       : whoami
+Query        : 
+
+
