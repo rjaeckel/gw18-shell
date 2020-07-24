@@ -6,6 +6,8 @@ $wadl = ([xml](
     Get-Content "$prefix/application.wadl" -Raw -ea Stop
     )).DocumentElement
 
+$wadl | add-prop PathPrefix { $prefix }
+
 $wadl | namespaceManager -ns @{
     'wadl'='http://wadl.dev.java.net/2009/02'
     'xs'='http://www.w3.org/2001/XMLSchema'
@@ -26,7 +28,8 @@ $wadl | add-prop IncludedGrammars {
 $wadl | add-prop wadlMethods {
     $this | method // |ForEach-Object {
         $_ | Add-Member -TypeName wadlMethod
-        $_ | add-prop Path { $this|path }
+        #$_ | add-prop Path { $this|path } 
+        $_ | Add-Member Path -NotePropertyValue ($_|path)
         $_ | add-prop httpMethod { $this.name }
         $_ | add-prop DocText { $this | docText }
         
@@ -61,7 +64,7 @@ $wadl | add-prop wadlMethods {
             )}
 
         # anylysis
-        
+        $_ | add-prop idName { $this |xpath '@id' -attr value }
         $_ | add-prop httpIdent { "$($this.path) ::$($this.httpMethod)" }
         $_ | add-prop auto_verb {
             if($this.httpMethod -eq 'put' -and $this.path -like '*}' ) {"update"} ## update
