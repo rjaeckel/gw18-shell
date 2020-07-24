@@ -2,26 +2,31 @@ With the release of GroupWise 18, the Vendor pushed out an updated version of th
 
 The WADL-Document describing this REST~ful~ API has changed in several, ~breaking~ manners.
 
- * Method IDs removed
- * Flattened `<wadl:method /> structure
- * Request and Response Elements for Domain Object Types' methods removed
+ * [-] Method `ID`s removed
+ * [-] Request and Response Elements for methods of `Domain Object Types' removed
+ * [~] Flattened `<wadl:method /> structure
 
 
 # Challenge accepted.
 
-As the relevant api describing wadl- and xsd-filed are publicly available, so I've decided to place them here too.
+As the relevant api describing wadl- and xsd-files are publicly available, I've decided to place theese here too.
 
 
 ## Stats
 
-> `gw14/application.wadl`
+This api is huge.
+
+>
+> **`gw14/application.wadl`**
 >
 > WADL-GENERATOR: `Jersey: 1.13 06/29/2012 05:14 PM`
+> 
+> TOTAL Methods: `447`
 > UNIQUE Representation elements: `77`
-> UNIQUE Methods: `447`
 
-> `gw18/application.wadl`
+> **`gw18/application.wadl`**
 >
 > WADL-GENERATOR: `Enunciate-2.0`
+>
+> TOTAL Methods: `622`
 > UNIQUE Representation elements: `123`
-> UNIQUE Methods: `622`
